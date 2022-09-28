@@ -1,0 +1,85 @@
+.sidebar {
+    width: 99vw;
+    height: 99vh;
+    max-width: var(--fixed-width);
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 6rem 1rem;
+    transform: scale(0);
+}
+
+.sidebar-overlay.show {
+    opacity: 1;
+    z-index: 100;
+}
+
+.show .sidebar {
+    transform: scale(1);
+}
+
+aside {
+    display: block;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: fit-content;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    transition: var(--transition);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-close {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    cursor: pointer;
+}
+
+.sidebar-logo {
+    max-width: 2.5rem;
+    background: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-link {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.sidebar-sublink {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.sidebar-links a {
+    text-decoration: none;
+}
+
+.sidebar-links li {
+    list-style: none;
+    padding: 1rem 0rem;
+    color: var(--grey-55);
+}
+
+.sidebar-links li li {
+    list-style: none;
+    padding: 0.3rem 0rem;
+}

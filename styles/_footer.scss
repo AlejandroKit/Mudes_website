@@ -1,0 +1,117 @@
+footer {
+    background-color: var(--grey-2);
+    color: var(--black);
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+footer .row {
+    padding: 1em 1em;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+footer .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: stretch;
+}
+
+footer .row.primary a {
+    text-decoration: none;
+}
+
+footer .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+footer .column.links ul li i {
+    padding-right: 2px;
+    padding-bottom: 1px;
+}
+
+footer .column.links ul li {
+    font-size: 0.9rem;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: var(--grey-55);
+    font-weight: 400;
+    white-space: nowrap;
+    padding-top: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    margin: 0;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: var(--primaryColor600);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: var(--primaryColorHover);
+}
+
+.logo-mail-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-mail-footer a {
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+footer div.social {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+
+footer .social i {
+    color: var(--primaryColor600)
+}
+
+footer .social i:hover {
+    color: var(--primaryColor)
+}
+
+footer .copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+    justify-content: space-between;
+
+}
+
+footer .copyright p {
+    font-size: 0.9em;
+    text-align: right;
+    padding: 6px;
+    margin-bottom: 0px;
+    color: var(--primaryColor50)
+}
