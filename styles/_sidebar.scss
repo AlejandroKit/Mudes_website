@@ -13,14 +13,36 @@
 .sidebar-overlay.show {
     opacity: 1;
     z-index: 100;
-}
 
-.show .sidebar {
-    transform: scale(1);
+    .sidebar {
+        transform: scale(1);
+    }
 }
 
 aside {
     display: block;
+
+    .sidebar-links {
+        padding: 0;
+
+        .sidebar-sublinks {
+            margin: 1em 0;
+        }
+    }
+
+    h4 {
+        color: var(--primaryColor600);
+        margin-bottom: 0;
+    }
+
+    div.social {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.4em;
+        flex-direction: row;
+    }
+
 }
 
 .sidebar-overlay {
@@ -42,9 +64,13 @@ aside {
     background: transparent;
     border-color: transparent;
     position: absolute;
-    top: 1rem;
-    right: 2.5rem;
+    top: .5rem;
+    right: 2rem;
     cursor: pointer;
+
+    i {
+        color: var(--grey-55);
+    }
 }
 
 .sidebar-logo {
@@ -67,19 +93,18 @@ aside {
     font-size: 1.5rem;
     text-transform: capitalize;
     color: var(--black);
-}
 
-.sidebar-links a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-.sidebar-links li {
-    list-style: none;
-    padding: 1rem 0rem;
-    color: var(--grey-55);
-}
+    li {
+        list-style: none;
+        padding: 1rem 0rem;
+        color: var(--grey-55);
 
-.sidebar-links li li {
-    list-style: none;
-    padding: 0.3rem 0rem;
+        li {
+            padding: 0.3rem 0rem;
+        }
+    }
 }

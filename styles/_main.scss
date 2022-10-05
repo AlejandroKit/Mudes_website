@@ -1,0 +1,189 @@
+.main {
+    padding: .5rem 0;
+
+    .main-about {
+        padding: 0 .5rem;
+
+        p {
+            color: var(--primaryColor600);
+            font-size: 1.8em;
+            margin: 15px 0;
+        }
+
+        button {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    .main-socialImpact {
+        background-color: var(--primaryColor50);
+        margin-top: 3rem;
+        padding: 2rem .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .impact {
+            display: flex;
+            margin: 1rem 0;
+
+            i {
+                color: var(--grey-30);
+                font-size: 3em;
+                align-self: center;
+            }
+
+            div {
+                padding-left: 1rem;
+
+                h6 {
+                    font-family: var(--bodyFont);
+                    color: var(--primaryColor600);
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    color: var(--grey-55);
+                    font-size: 1em;
+                    width: 85%;
+
+                    span {
+                        color: var(--primaryColor600);
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .main-testimonials {
+        // background-color: var(--grey-30);
+        padding: .5rem;
+
+        .carousel-indicators {
+            bottom: -.5em;
+
+            .active {
+                background-color: var(--primaryColor600);
+            }
+
+            button {
+                background-color: var(--grey-55);
+                height: .5em;
+                width: .5em;
+                border-radius: 50%;
+            }
+        }
+
+        .testimonio-header {
+            display: flex;
+            align-items: center;
+
+            img {
+                object-fit: cover;
+                height: 5em;
+                width: 5em;
+                border-radius: 50%;
+                border: 5px solid var(--primaryColor600);
+            }
+
+            .testimonio-header__text {
+                margin-left: .5rem;
+
+                span {
+                    color: var(--primaryColor600);
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+
+                .info {
+                    color: var(--grey-55);
+                }
+            }
+        }
+
+        .testimonio {
+            font-weight: 600;
+            font-style: italic;
+            font-size: 1.1em;
+            padding: .5rem;
+        }
+    }
+
+    .main-involucrate {
+        div {
+            padding: .5em .8em;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 5em;
+                width: 5em;
+            }
+
+            .title {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+                    color: #fff;
+                    margin: 0;
+                    font-size: 1.3em;
+                    width: 70%;
+                }
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+
+        .sumate {
+            background-image: url(../assets/involucrate.jpg);
+            background-position: 60%;
+            background-size: 170%;
+            height: 30vh;
+            padding: 0;
+            justify-content: end;
+
+
+
+            h2 {
+                background: linear-gradient(transparent 1%, #000);
+                color: #fff;
+                font-size: 3em;
+                margin: 0;
+                padding-left: .2em;
+            }
+        }
+
+        .donacion {
+            background-color: #E5006D;
+        }
+
+        .empresaAliada {
+            background-color: #FF479F;
+        }
+
+        .voluntario {
+            background-color: #FEF0F7;
+
+            h2 {
+                color: var(--primaryColor600) !important;
+            }
+
+            i {
+                color: var(--primaryColor600) !important;
+            }
+        }
+    }
+}

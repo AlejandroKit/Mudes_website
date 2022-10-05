@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-    --primaryColor600: hsl(331, 100%, 45%);
+    --primaryColor600: #E5006D;
     /*var(--primaryColor600)*/
     --primaryColorHover: #da0068;
     /*var(--primaryColorHover)*/
@@ -62,10 +62,11 @@ html {
 a {
     color: var(--primaryColor600);
     transition: all .3s ease-out;
-}
+    text-decoration: none;
 
-a:hover {
-    opacity: .75;
+    &:hover {
+        opacity: .75;
+    }
 }
 
 img {
@@ -74,13 +75,27 @@ img {
 }
 
 h1 {
+    font-size: 1.5em;
+    font-weight: 100;
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
 }
 
 h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+}
+
+h3 {
+    color: var(--primaryColor600);
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
 }
 
 .site {
@@ -107,7 +122,7 @@ h2 {
     text-align: left;
 }
 
-.post-content>article {
+.post-content article {
     padding: 1rem;
     background-color: #e3f2fd;
 }
@@ -191,6 +206,9 @@ h2 {
 /*---------- end of botón Donar -------------------- */
 
 @import './navbar';
+@import './main';
+@import './news';
+@import './sponsors';
 @import './sidebar';
 @import './footer';
 @import './mediaQuerys';

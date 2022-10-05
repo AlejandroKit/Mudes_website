@@ -1,0 +1,50 @@
+.news {
+    padding: .5rem;
+
+    .news-header {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    #carousel-news {
+        .carousel-indicators {
+            bottom: -1.5em;
+
+            button {
+                background-color: var(--grey-55);
+                height: .5em;
+                width: .5em;
+                border-radius: 50%;
+            }
+
+            .active {
+                background-color: var(--primaryColor600);
+            }
+        }
+
+        .portada {
+            span {
+                background-color: var(--primaryColor600);
+                color: #fff;
+                font-family: var(--bodyFont);
+                font-weight: 100;
+                padding: 0 10px;
+                position: absolute;
+                top: 60%;
+            }
+        }
+
+        .fecha-news {
+            color: var(--grey-55);
+            font-size: 1.1em;
+        }
+
+        h3 {
+            color: #000;
+        }
+    }
+}
