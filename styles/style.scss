@@ -173,13 +173,17 @@ p {
 
 /* --------------- Hero ---------------- */
 .hero {
-    background-color: var(--primaryColor600);
+    background-image: url(../assets/Hero.jpeg);
+    background-position: 45% 80%;
+    background-size: 190%;
+    height: 40vh;
     padding: 0 0;
-}
 
-.hero img {
-    opacity: 0.4;
-    margin: 0 0;
+    div {
+        height: 40vh;
+        background-color: var(--primaryColor600);
+        opacity: .2;
+    }
 }
 
 /* --------------- End of Hero ---------------- */
