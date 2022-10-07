@@ -1,0 +1,129 @@
+.main-queHacemos {
+    .frontpage {
+        background-image: url(../assets/que-hacemos-frontpage.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+
+        div {
+            background-color: var(--primaryColor600);
+            height: 100%;
+            opacity: .3;
+        }
+    }
+
+    .description {
+        padding: 1em .8em;
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    .main-pilares {
+        background-color: var(--primaryColor50);
+        padding: 1em .8em;
+
+        h3 {
+            color: var(--black);
+        }
+
+        .pilar {
+            background-color: #fff;
+            padding: .8em;
+            border-radius: 10px;
+
+            h5 {
+                color: var(--primaryColor600);
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+            span,
+            ul {
+                color: var(--grey-55);
+                font-weight: 600;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+    }
+
+    .main-proyectoJuanPablo {
+        .proyectoJuanPablo-description {
+            padding: .8em;
+
+            h2 {
+                color: var(--primaryColor600);
+            }
+
+            p {
+                color: var(--grey-55);
+                font-weight: 500;
+            }
+        }
+
+        .stats-container {
+            color: var(--red);
+            margin: .8em;
+            padding: .8em;
+            border-left: 5px solid var(--red);
+
+            span {
+                font-weight: 500;
+                font-size: 1.2em;
+            }
+
+            .stats {
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .num {
+                    line-height: 1;
+                    font-size: 4em;
+                }
+
+                .title {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        p {
+            color: var(--grey-55);
+            padding: .8em;
+        }
+    }
+
+    .support {
+        background-image: url(../assets/support.png);
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        div {
+            background: linear-gradient(transparent, #000d 50%);
+            height: 25vh;
+            padding: .8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            h2 {
+                color: #fff;
+                font-size: 2em;
+            }
+        }
+    }
+}

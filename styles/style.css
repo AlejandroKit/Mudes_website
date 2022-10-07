@@ -101,6 +101,8 @@ ul {
 
 p {
   font-family: 'Inter', sans-serif;
+  color: var(--black);
+  font-weight: 600;
 }
 
 .site {
@@ -610,6 +612,132 @@ p {
   margin: auto;
 }
 
+.main-queHacemos .frontpage {
+  background-image: url(../assets/que-hacemos-frontpage.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+
+.main-queHacemos .frontpage div {
+  background-color: var(--primaryColor600);
+  height: 100%;
+  opacity: .3;
+}
+
+.main-queHacemos .description {
+  padding: 1em .8em;
+}
+
+.main-queHacemos .description h1 {
+  font-size: 2em;
+}
+
+.main-queHacemos .main-pilares {
+  background-color: var(--primaryColor50);
+  padding: 1em .8em;
+}
+
+.main-queHacemos .main-pilares h3 {
+  color: var(--black);
+}
+
+.main-queHacemos .main-pilares .pilar {
+  background-color: #fff;
+  padding: .8em;
+  border-radius: 10px;
+}
+
+.main-queHacemos .main-pilares .pilar h5 {
+  color: var(--primaryColor600);
+}
+
+.main-queHacemos .main-pilares .pilar p {
+  font-weight: 600;
+}
+
+.main-queHacemos .main-pilares .pilar span,
+.main-queHacemos .main-pilares .pilar ul {
+  color: var(--grey-55);
+  font-weight: 600;
+}
+
+.main-queHacemos .main-pilares .pilar ul {
+  list-style: disc;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description {
+  padding: .8em;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description h2 {
+  color: var(--primaryColor600);
+}
+
+.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description p {
+  color: var(--grey-55);
+  font-weight: 500;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container {
+  color: var(--red);
+  margin: .8em;
+  padding: .8em;
+  border-left: 5px solid var(--red);
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container span {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container .stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container .stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container .stats .num {
+  line-height: 1;
+  font-size: 4em;
+}
+
+.main-queHacemos .main-proyectoJuanPablo .stats-container .stats .title {
+  font-weight: 700;
+}
+
+.main-queHacemos .main-proyectoJuanPablo p {
+  color: var(--grey-55);
+  padding: .8em;
+}
+
+.main-queHacemos .support {
+  background-image: url(../assets/support.png);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.main-queHacemos .support div {
+  background: linear-gradient(transparent, #000d 50%);
+  height: 25vh;
+  padding: .8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.main-queHacemos .support div h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
 .sidebar {
   width: 99vw;
   height: 99vh;
@@ -743,7 +871,7 @@ footer {
 }
 
 footer .row {
-  padding: 1em 1em;
+  padding: 1em 0;
   margin-right: 0px;
   margin-left: 0px;
 }
