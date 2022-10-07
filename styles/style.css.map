@@ -10,7 +10,8 @@
         "_queHacemos.scss",
         "_sidebar.scss",
         "_footer.scss",
-        "_mediaQuerys.scss"
+        "_mediaQuerys.scss",
+        "_nosotras.scss"
     ],
     "names": [],
     "file": "style.css"
