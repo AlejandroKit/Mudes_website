@@ -693,13 +693,22 @@ p {
 }
 
 .main-queHacemos .main-proyectoJuanPablo .stats-container .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-queHacemos .main-proyectoJuanPablo .stats-container .stats div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-queHacemos .main-proyectoJuanPablo .stats-container .stats .num {
@@ -719,18 +728,33 @@ p {
 .main-queHacemos .support {
   background-image: url(../assets/support.png);
   height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .main-queHacemos .support div {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #000d));
   background: linear-gradient(transparent, #000d 50%);
   height: 25vh;
   padding: .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .main-queHacemos .support div h2 {
@@ -1263,5 +1287,77 @@ footer .copyright p {
 
 .main-nosotras .main-valores .single-valor p {
   font-size: 1.3rem;
+}
+
+.hero-contacto {
+  background-image: url(../assets/contacto.png);
+  background-position: 45% 80%;
+  background-size: cover;
+  height: 30vh;
+  padding: 0 0;
+}
+
+.hero-contacto div {
+  height: 30vh;
+  background-color: var(--primaryColor600);
+  opacity: .05;
+}
+
+.main-contacto {
+  padding: 0 0;
+}
+
+.main-contacto .main-contacto-text {
+  padding: 2rem 1rem;
+}
+
+.main-contacto .main-contacto-text h1 {
+  font-size: 2.8rem;
+  color: var(--grey-55);
+}
+
+.main-contacto .main-contacto-text p {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: var(--grey-55);
+}
+
+.main-contacto .form-container form {
+  padding: 1rem 1rem;
+}
+
+.main-contacto .form-container form label {
+  font-weight: bold;
+}
+
+.main-contacto .form-container form label span {
+  color: var(--primaryColor600);
+}
+
+.main-contacto .form-container form .form-submit {
+  padding: 1rem 0;
+}
+
+.main-contacto .form-container form .form-submit .enviar-btn {
+  cursor: pointer;
+  color: var(--primaryColor50);
+  background: var(--primaryColor600);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  width: 100%;
+  padding: 0.5rem 0;
+  -webkit-box-shadow: var(--shadow-1);
+          box-shadow: var(--shadow-1);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.main-contacto .form-container form .form-submit .enviar-btn:hover {
+  background: var(--primaryColorHover);
+  -webkit-box-shadow: var(--shadow-3);
+          box-shadow: var(--shadow-3);
 }
 /*# sourceMappingURL=style.css.map */
