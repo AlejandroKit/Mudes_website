@@ -39,47 +39,97 @@
                         <a href="#" class="nav-link">Involúcrate</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Contacto</a>
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- end of navbar -->
         <!-- hero -->
-        <div class="hero-contacto">
+        <div class="hero-donaciones">
             <div></div>
         </div>
         <!-- end of hero -->
-        <div class="main-contacto">
-            <div class="main-contacto-text">
-                <h1>Escríbenos</h1>
-                <p>Puedes contactarnos por cualquier consulta o propuesta que tengas. Te responderemos con mucho gusto.</p>
+        <div class="main-donaciones">
+            <div class="main-donaciones-text">
+                <h1>Donaciones</h1>
+                <p>Tu donación ayudará a romper brechas de desigualdad de mujeres +40 años en comunidades vulnerables. Creando bienestar integral para ellas y sus familias.</p>
             </div>
-            <div class="form-container">
-                <form class="contact-form" action="" method="post" accept-charset="utf-8">
-                    <div class="form-group">
-                        <label for="firstname">Nombre <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="text" name="nombre" class="form-control name" id="firstname" required>
+            <div class="recaudacion-container">
+                <div class="recaudacion-title">
+                    <h2>Cómo usamos el dinero recaudado?</h2>
+                </div>
+                <div class="recaudacion-sub-title">
+                    <h3>Poner para que usan la mayor parte del dinero recaudado en este párrafo.</h3>
+                </div>
+                <div class="recaudacion-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis lorem sed diam gravida tristique posuere ac nibh. </p>
+                </div>
+                <div class="donaciones-grafico">
+                    <img src="../assets/donaciones-grafico.png" alt="gráfico de donaciones">
+                </div>
+                <div class="donaciones-cifras">
+                    <div class="single-cifra-pink">
+                        <span>64%</span>
+                        <p>Destinado a programas de Desarrollo</p>
                     </div>
-                    <div class="form-group">
-                        <label for="lastname">Apellido <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="text" name="apellido" class="form-control last-name" id="lastname" required>
+                    <div class="single-cifra-blue">
+                        <span>18%</span>
+                        <p>Destinado a gastos administrativos</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="email" name="email" class="form-control email" id="email" required>
+                    <div class="single-cifra-red">
+                        <span>14%</span>
+                        <p>Destinados a Fundraising</p>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje <span class="form-required" title="Campo requerido.">*</span></label>
-                        <textarea name="mensaje" class="form-control message" rows="4" id="message" required></textarea>
+                </div>
+            </div>
+            <div class="imagen-container">
+                <img src="../assets/donaciones-2.png" alt="doná">
+            </div>
+            <div class="apoya-container">
+                <div class="apoya-dibujo">
+                    <img src="../assets/apoya.png" alt="apoya">
+                </div>
+                <div class="apoya-title">
+                    <h2>Apoya nuestro trabajo</h2>
+                </div>
+                <div class="apoya-paragraph">
+                    <p>Puedes hacer tu donación monetaria para ayudar cada vez más a mujeres lo necesitan.</p>
+                </div>
+                <!-- Button to Open the Modal -->
+                <div class="ver-datos-button">
+                    <button type="button" class="ver-datos-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >Ver datos de transferencia</button>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Transferencia bancaria</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                            <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h4>Banco Interbank</h4>
+                                    <h5>Nro. de cuenta en soles</h5>
+                                    <p>2003003783241</p>
+                                    <h5>Código CCI</h5>
+                                    <input type="text" value="003200000300378324134" id="myInput" readonly><i class="fas fa-copy" onclick="myFunction()"></i>
+                                    <h5>Nro. de cuenta en dólares</h5>
+                                    <p>2003003783259</p>
+                                    <h5>Código CCI</h5>
+                                    <input type="text" value="00320000300378325936" id="myInput2" readonly><i class="fas fa-copy" onclick="myFunction2()"></i>
+                                    <h5>Titular de la cuenta:</h5>
+                                    <p>Mujeres Unidas para el Desarrollo Social</p>
+                                    <h5>CUIT del titular:</h5>
+                                    <p>30708357363</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-submit">
-                        <button type="submit" class="enviar-btn">Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-
         <!-- sidebar -->
         <div class="sidebar-overlay">
             <aside class="sidebar">
@@ -100,7 +150,7 @@
                     <li class="sidebar-sublinks">
                         <h4>Sumate</h4>
                         <ul>
-                            <li><a href="./donaciones.html" class="sidebar-sublink">Donaciones</a></li>
+                            <li><a href="#" class="sidebar-sublink">Donaciones</a></li>
                             <li><a href="#" class="sidebar-sublink">Voluntariado</a></li>
                             <li><a href="#" class="sidebar-sublink">Empresa aliada</a></li>
                         </ul>
@@ -109,7 +159,7 @@
                         <a href="#" class="sidebar-link">Novedades</a>
                     </li>
                     <li>
-                        <a href="#" class="sidebar-link">Contacto</a>
+                        <a href="./contacto.html" class="sidebar-link">Contacto</a>
                     </li>
                 </ul>
                 <div class="social">
@@ -141,14 +191,14 @@
                         <li><a href="./nosotras.html">Nosotras</a></li>
                         <li><a href="./queHacemos.html">¿Qué hacemos?</a></li>
                         <li><a href="#">Sobre MUDES</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="column links">
                     <h3>Involúcrate</h3>
                     <ul>
                         <li><a href="#">Voluntariado</a></li>
-                        <li><a href="./donaciones.html">Donaciones</a></li>
+                        <li><a href="#">Donaciones</a></li>
                         <li><a href="#">Empresa aliada</a></li>
                     </ul>
                 </div>
@@ -160,5 +210,31 @@
         <!-- end of footer -->
         <!-- index js -->
         <script src="../js/index.js"></script>
+        <script>
+            function myFunction() {
+                // Get the text field
+                var copyText = document.getElementById("myInput");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+
+            }
+                function myFunction2() {
+                // Get the text field
+                var copyText = document.getElementById("myInput2");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+
+            }
+        </script>
     </body>
 </html>
