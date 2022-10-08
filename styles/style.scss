@@ -75,7 +75,8 @@ img {
 }
 
 h1 {
-    font-size: 1.5em;
+    color: var(--grey-55);
+    font-size: 2em;
     font-weight: 100;
     font-family: 'Inter', sans-serif;
 }
@@ -189,6 +190,43 @@ p {
 }
 
 /* --------------- End of Hero ---------------- */
+/* --------------- Testimonials ---------------- */
+.testimonio-header {
+    display: flex;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        height: 5em;
+        width: 5em;
+        border-radius: 50%;
+        border: 5px solid var(--primaryColor600);
+    }
+
+    .testimonio-header__text {
+        margin-left: .5rem;
+
+        span {
+            color: var(--primaryColor600);
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .info {
+            color: var(--grey-55);
+        }
+    }
+}
+
+.testimonio {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1em;
+    height: 35vh;
+    padding: .5rem;
+}
+
+/* ------------ End of Testimonial ------------- */
 /*---------- botón Donar -------------------- */
 .donar-btn {
     cursor: pointer;
@@ -216,6 +254,7 @@ p {
 @import './news';
 @import './sponsors';
 @import './queHacemos';
+@import './voluntariado';
 @import './sidebar';
 @import './footer';
 @import './mediaQuerys';

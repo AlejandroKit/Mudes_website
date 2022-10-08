@@ -1,0 +1,111 @@
+.main-voluntariado {
+    .frontpage {
+        background-image: url(../assets/voluntariado-frontpage.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+
+        div {
+            background-color: var(--primaryColor600);
+            height: 100%;
+            opacity: .3;
+        }
+    }
+
+    .description {
+        padding: 1em .8em;
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    .main-colabora {
+        background-color: var(--primaryColor50);
+        padding: .8em;
+
+        h2 {
+            color: var(--primaryColor600);
+            font-size: 2em;
+        }
+
+        p {
+            color: var(--grey-55);
+            font-size: 1.2em;
+        }
+
+        .cards-container {
+            height: 80%;
+
+            div {
+                background-color: #fff;
+                margin: 1em 0;
+                border-radius: 10px;
+                padding: .8em;
+
+                h4 {
+                    color: var(--primaryColor600);
+                }
+
+                p {
+                    color: #000;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .main-form {
+        padding: .8em;
+
+        h2 {
+            font-size: 2em;
+            margin: .8em 0;
+        }
+
+        p {
+            color: var(--primaryColor600);
+            font-size: 1.2em;
+            width: 75%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-family: var(--bodyFont);
+                font-weight: 600;
+
+                b {
+                    color: #f00;
+                }
+            }
+
+            input {
+                font-size: 1.2em;
+                margin-bottom: .8em;
+                padding: 0 .2em;
+                border: 3px solid var(--grey-30);
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .tipo-voluntariado {
+                color: var(--grey-55);
+                font-weight: 500;
+            }
+
+            textarea {
+                font-size: 1.2em;
+                margin-bottom: .8em;
+                padding: 0 .2em;
+                border: 3px solid var(--grey-30);
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+
+    }
+}
