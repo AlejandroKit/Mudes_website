@@ -1334,6 +1334,10 @@ footer .copyright p {
   color: var(--primaryColor600);
 }
 
+.main-contacto .form-container form .form-group {
+  padding-top: 1rem;
+}
+
 .main-contacto .form-container form .form-submit {
   padding: 1rem 0;
 }
@@ -1550,5 +1554,165 @@ footer .copyright p {
 
 .main-donaciones .apoya-container .ver-datos-button input {
   border-style: hidden;
+}
+
+.hero-empresas {
+  background-image: url(../assets/empresas.png);
+  background-position: 45% 80%;
+  background-size: cover;
+  height: 30vh;
+  padding: 0 0;
+}
+
+.hero-empresas div {
+  height: 30vh;
+  background-color: var(--primaryColor600);
+  opacity: .05;
+}
+
+.main-empresas {
+  padding: 0 0;
+}
+
+.main-empresas .main-empresas-text {
+  padding: 2rem 1rem;
+}
+
+.main-empresas .main-empresas-text h1 {
+  font-size: 2.8rem;
+  color: var(--grey-55);
+}
+
+.main-empresas .main-empresas-text p {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: var(--grey-55);
+}
+
+.main-empresas .main-aliado {
+  padding: 2rem 1rem;
+  background-color: var(--primaryColor50);
+}
+
+.main-empresas .main-aliado h4 {
+  color: var(--grey-55);
+}
+
+.main-empresas .main-aliado h2 {
+  font-size: 2rem;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.main-empresas .main-aliado h2:before {
+  content: '';
+  display: block;
+  width: 99%;
+  height: 97%;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--red)), to(var(--primaryColor600)));
+  background: linear-gradient(to top, var(--red), var(--primaryColor600));
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+
+.main-empresas .main-aliado .single-valor {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5%;
+  margin: 3rem 0rem;
+}
+
+.main-empresas .main-aliado .single-valor .title {
+  padding-bottom: 1rem;
+}
+
+.main-empresas .main-aliado .single-valor .title h4 {
+  color: var(--red);
+}
+
+.main-empresas .main-aliado .single-valor p {
+  font-size: 1.3rem;
+}
+
+.main-empresas .porque-container {
+  padding: 2rem 1rem;
+}
+
+.main-empresas .porque-container .porque-header h2 {
+  font-weight: bold;
+}
+
+.main-empresas .porque-container .porque-sub-header {
+  padding-top: 1rem;
+}
+
+.main-empresas .porque-container .porque-sub-header h3 {
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.main-empresas .porque-container .porque-sub-header h3:before {
+  content: '';
+  display: block;
+  width: 99%;
+  height: 97%;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--red)), to(var(--primaryColor600)));
+  background: linear-gradient(to top, var(--red), var(--primaryColor600));
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+
+.main-empresas .porque-container .impacto-container {
+  padding-top: 1rem;
+}
+
+.main-empresas .porque-container .impacto-container .single-impacto-container {
+  padding: 1rem 0;
+}
+
+.main-empresas .porque-container .impacto-container .single-impacto-container h4 {
+  color: var(--primaryColor600);
+}
+
+.main-empresas .porque-container .impacto-container .single-impacto-container p {
+  color: var(--grey-55);
+}
+
+.main-empresas .main-contacto .main-contacto-text-empresas {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-empresas .main-contacto .main-contacto-text-empresas h2 {
+  font-weight: bold;
+}
+
+.main-empresas .main-contacto .main-contacto-text-empresas p {
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.main-empresas .main-contacto .main-contacto-text-empresas p:before {
+  content: '';
+  display: block;
+  width: 99%;
+  height: 96%;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--red)), to(var(--primaryColor600)));
+  background: linear-gradient(to top, var(--red), var(--primaryColor600));
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
 }
 /*# sourceMappingURL=style.css.map */

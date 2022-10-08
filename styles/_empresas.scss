@@ -1,0 +1,151 @@
+.hero-empresas{
+    background-image: url(../assets/empresas.png);
+    background-position: 45% 80%;
+    background-size: cover;
+    height: 30vh;
+    padding: 0 0;
+
+    div {
+        height: 30vh;
+        background-color: var(--primaryColor600);
+        opacity: .05;
+    }
+}
+
+.main-empresas {
+    padding: 0 0;
+
+    .main-empresas-text {
+        padding: 2rem 1rem;
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--grey-55);
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: var(--grey-55);
+        }
+    }
+
+        .main-aliado{
+        padding: 2rem 1rem;
+        background-color: var(--primaryColor50);
+
+        h4{
+            color:var(--grey-55)
+        }
+
+        h2{
+            font-size: 2rem;
+            color: #000;
+            background: #fff;
+            mix-blend-mode: multiply;
+            position: relative;
+        }
+        
+        h2:before {
+            content: '';
+            display: block;
+            width: 99%;
+            height: 97%;
+            background: linear-gradient(to top, var(--red), var(--primaryColor600));
+            mix-blend-mode: screen; 
+            position:absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+            
+        }
+
+        .single-valor{
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5%;
+            margin: 3rem 0rem;
+            .title{
+                padding-bottom: 1rem;
+                h4{
+                    color: var(--red);
+                }
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .porque-container{
+        padding: 2rem 1rem;
+        .porque-header{
+            h2{
+                font-weight: bold;
+            }
+        }
+
+        .porque-sub-header{
+            padding-top: 1rem;
+            h3{
+                color: #000;
+                background: #fff;
+                mix-blend-mode: multiply;
+                position: relative;
+            }
+            
+            h3:before {
+                content: '';
+                display: block;
+                width: 99%;
+                height: 97%;
+                background: linear-gradient(to top, var(--red), var(--primaryColor600));
+                mix-blend-mode: screen; 
+                position:absolute;
+                top: 0.1rem;
+                left: 0.1rem;
+            }
+        }
+
+        .impacto-container{
+            padding-top: 1rem;
+            .single-impacto-container{
+                padding: 1rem 0;
+                h4{
+                    color:var(--primaryColor600)
+                }
+                p{
+                    color:var(--grey-55)
+                }
+            }
+        }
+    }
+    .main-contacto{
+        .main-contacto-text-empresas{
+            padding-top:1rem;
+            padding-left:1rem;
+            padding-right: 1rem;
+            h2{
+                font-weight: bold;
+            }
+
+            p{
+                color: #000;
+                background: #fff;
+                mix-blend-mode: multiply;
+                position: relative;
+            }
+            
+            p:before {
+                content: '';
+                display: block;
+                width: 99%;
+                height: 96%;
+                background: linear-gradient(to top, var(--red), var(--primaryColor600));
+                mix-blend-mode: screen; 
+                position:absolute;
+                top: 0.1rem;
+                left: 0.1rem;
+            }
+        }
+    }
+}
