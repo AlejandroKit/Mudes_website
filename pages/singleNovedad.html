@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
         <!-- Custom css -->
         <link rel="stylesheet" href="../styles/style.css" />
+        <!-- Contentful -->
+        <script src="https://unpkg.com/contentful@7.0.5/dist/contentful.browser.min.js" charset="utf-8"></script>
+        <script> var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below</script>
+        <script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js" charset="utf-8"></script>
     </head>
     <body>
         <!-- navbar -->
@@ -49,95 +53,36 @@
         </nav>
         <!-- end of navbar -->
         <!-- hero -->
-        <div class="hero-nosotras">
+        <div class="hero-contacto">
             <div></div>
         </div>
         <!-- end of hero -->
-        <div class="main-nosotras">
-            <div class="main-about-nosotras">
-                <h1>Mujeres Unidas para el Desarrollo Social</h1>
-                <p>Somos una sociación civil sin fines de lucro hecha por mujeres y para mujeres que busca integrar las diferentes disciplinas y <span>evidenciar el rol de la mujer en el desarrollo integral de la sociedad.</span></p>
+        <!-- Novedades -->
+        <div class="main-novedades">
+            <div class="main-novedades-text">
+                <h2><a href="./novedades.html">Volver a Novedades<i class="fas fa-reply"></i></a></h2>
             </div>
-            <div class="main-nosotras-carousel">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-1.png" alt="..." />
-                            <span>Keyla Muñoz</span>
-                            <p class="info">Co-fundadora</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-2.png" alt="..." />
-                            <span>Fiorella Trujillo</span>
-                            <p class="info">Co-fundadora</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-3.png" alt="..." />
-                            <span>Anghella Román</span>
-                            <p class="info">Líder de sostenibilidad</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-4.png" alt="..." />
-                            <span>Milagro Cueva</span>
-                            <p class="info">Líder de ejecución</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-1.png" alt="..." />
-                            <span>Keyla Muñoz</span>
-                            <p class="info">Co-fundadora</p>
-                        </div>
-                                                <div class="slide">
-                            <img src="../assets/miembro-foto-2.png" alt="..." />
-                            <span>Fiorella Trujillo</span>
-                            <p class="info">Co-fundadora</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-3.png" alt="..." />
-                            <span>Anghella Román</span>
-                            <p class="info">Líder de sostenibilidad</p>
-                        </div>
-                        <div class="slide">
-                            <img src="../assets/miembro-foto-4.png" alt="..." />
-                            <span>Milagro Cueva</span>
-                            <p class="info">Líder de ejecución</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mision-nosotras-container">
-                    <div class="mision-nosotras">
-                        <i class="fas fa-quote-left fa-4x" style="color: #E5006D;"></i>
-                        <h3>Queremos estar presente en todas las regiones del Perú, impulsando la autonomía integral y personal de las mujeres en contextos vulnerables mediante una formación de liderazgo y empoderamiento con el fin de mejorar su calidad de vida.</h3>
-                    </div>
-                    <div class="mision-ver-mas-btn">
-                        <a href="./queHacemos.html">Conoce nuestro trabajo <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
+            <div class="novedades-container">
+                <section id="posts" class="posts"></section>
+                <img class="loader" src="../assets/loader.svg" alt="Cargando...">
+                <template id="post-template">
+                    <article class="post">
+                    <img class="post-image">
+                    <aside>
+                        <h2 class="post-title"></h2>
+                        <figure class="post-author"></figure>
+                        <p class="post-excerpt"></p>
+                        <div class="module-separator"></div>
+                        <div class="post-content"></div>
+                    </aside>
+                    </article>
+                </template>
             </div>
-            <div class="main-valores">
-                <div class="valores-header">
-                    <h4>Nuestros valores</h4>
-                    <h2>Principios que conducen nuestras acciones</h2>
-                </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Empatía</h4>
-                    </div>
-                    <p>El responder o gestionar nuestras decisiones pensando en como los demás podrían sentirse ante nuestras acciones, nos ayuda a tener un espacio social más amigable.</p>
-                </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Integridad</h4>
-                    </div>
-                    <p>Es importante hacer lo correcto, incluso cuando nadie te ve, por convicción a tus valores.</p>
-                </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Compromiso</h4>
-                    </div>
-                    <p>Es importante hacer lo correcto, incluso cuando nadie te ve, por convicción a tus valores.</p>
-                </div>
+            <div class="main-novedades-text">
+                <h2><a href="./novedades.html">Volver a novedades<i class="fas fa-reply"></i></a></h2>
             </div>
         </div>
+        <!-- End of Novedades -->
         <!-- sidebar -->
         <div class="sidebar-overlay">
             <aside class="sidebar">
@@ -184,7 +129,7 @@
             <div class="row primary">
                 <div class="column about">
                     <div class="logo-mail-footer">
-                        <a href="../index.html"><img src="../assets/MUDEP_color.png" class="" alt="store logo" /></a>
+                        <a href="./index.html"><img src="../assets/MUDEP_color.png" class="" alt="store logo" /></a>
                     </div>
                     <h3>Seguinos en nuestras redes</h3>
                     <div class="social">
@@ -198,7 +143,7 @@
                     <ul>
                         <li><a href="./nosotras.html">Nosotras</a></li>
                         <li><a href="./queHacemos.html">¿Qué hacemos?</a></li>
-                        <li><a href="./novedades.html">Novedades</a></li>
+                        <li><a href="#">Novedades</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -216,7 +161,11 @@
             </div>
         </footer>
         <!-- end of footer -->
+        <!-- contentful -->
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
         <!-- index js -->
         <script src="../js/index.js"></script>
+        <!-- single novedades js -->
+        <script src="../js/singleNovedad.js"></script>
     </body>
 </html>

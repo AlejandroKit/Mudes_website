@@ -39,7 +39,7 @@
                         <a href="#" class="nav-link">Sumate</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Novedades</a>
+                        <a href="./pages/novedades.html" class="nav-link">Novedades</a>
                     </li>
                     <li>
                         <a href="./pages/contacto.html" class="nav-link">Contacto</a>
@@ -149,13 +149,13 @@
                     </div>
                 </a>
                 <a href="#">
-                <div class="voluntario">
-                    <img src="assets/dando-corazon.png" alt="" />
-                    <div class="title">
-                        <h2>Participando con tu donación</h2>
-                        <i class="fa-sharp fa-solid fa-arrow-right fa-xl"></i>
+                    <div class="voluntario">
+                        <img src="assets/dando-corazon.png" alt="" />
+                        <div class="title">
+                            <h2>Participando con tu donación</h2>
+                            <i class="fa-sharp fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
         </div>
@@ -163,40 +163,30 @@
         <div class="news">
             <div class="news-header">
                 <h2>Novedades</h2>
-                <a href="#">Ver más ></a>
+                <a href="./pages/novedades.html">Ver más ></a>
             </div>
-            <div id="carousel-news" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <div class="portada">
-                            <img src="assets/pacifico-shoot.jpg" class="d-block w-100" alt="..." />
-                            <span>Workshop</span>
+            <div class="news-container">
+                <section class="posts grid-container">
+                    <div id="carousel-news" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <span class="fecha-news">03 de septiembre</span>
-                        <h3>Jornadas de capacitación en xXXXXXjas</h3>
+                        <div id="posts" class="carousel-inner"></div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
+                </section>
+                <img class="loader" src="./assets/loader.svg" alt="Cargando...">
+                <template id="post-template">
+                    <div class="carousel-item active" data-bs-interval="3000">
                         <div class="portada">
-                            <img src="assets/pacifico-shoot.jpg" class="d-block w-100" alt="..." />
-                            <span>Workshop</span>
+                            <img class="post-image d-block w-100" />
+                            <span class="post-title"></span>
                         </div>
-                        <span class="fecha-news">03 de septiembre</span>
-                        <h3>Jornadas de capacitación en xXXXXXjas</h3>
+                        <span class="fecha-news"></span>
+                        <span class="post-content"></span>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <div class="portada">
-                            <img src="assets/pacifico-shoot.jpg" class="d-block w-100" alt="..." />
-                            <span>Workshop</span>
-                        </div>
-                        <span class="fecha-news">03 de septiembre</span>
-                        <h3>Jornadas de capacitación en xXXXXXjas</h3>
-                    </div>
-                </div>
+                </template>
             </div>
         </div>
         <!-- end of News -->
@@ -259,7 +249,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="sidebar-link">Novedades</a>
+                        <a href="./pages/novedades.html" class="sidebar-link">Novedades</a>
                     </li>
                     <li>
                         <a href="./pages/contacto.html" class="sidebar-link">Contacto</a>
@@ -293,7 +283,7 @@
                     <ul>
                         <li><a href="./pages/nosotras.html">Nosotras</a></li>
                         <li><a href="./pages/queHacemos.html">¿Qué hacemos?</a></li>
-                        <li><a href="#">Novedades</a></li>
+                        <li><a href="./pages/novedades.html">Novedades</a></li>
                         <li><a href="./pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -311,7 +301,11 @@
             </div>
         </footer>
         <!-- end of footer -->
+        <!-- contentful -->
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
         <!-- index js -->
         <script src="./js/index.js"></script>
+        <!-- novedades index js -->
+        <script src="./js/novedadesIndex.js"></script>
     </body>
 </html>

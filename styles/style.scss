@@ -100,79 +100,6 @@ p {
     font-weight: 600;
 }
 
-.site {
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 50%;
-    text-align: center;
-}
-
-.post {
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: .5rem;
-    max-width: 90%;
-    text-align: center;
-}
-
-.post-author {
-    font-size: small;
-}
-
-.post-excerpt,
-.post-content {
-    text-align: left;
-}
-
-.post-content article {
-    padding: 1rem;
-    background-color: #e3f2fd;
-}
-
-.post-content img {
-    display: block;
-    margin: auto;
-}
-
-.loader {
-    display: none;
-    margin: 2rem auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-}
-
-.post-title {
-    text-align: center;
-}
-
-.fl-icon-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fl-icon i {
-    height: auto;
-    width: auto;
-    padding-right: 3px;
-}
-
-.fl-icon a {
-    text-decoration: none;
-    color: unset;
-}
-
-.module-separator {
-    border-top: 1px solid black;
-    height: 2px;
-    padding: 0;
-    margin: 20px auto 0 auto;
-}
-
 /* --------------- Hero ---------------- */
 .hero {
     background-image: url(../assets/Hero.jpeg);
@@ -223,3 +150,4 @@ p {
 @import './contacto';
 @import './donaciones';
 @import './empresas';
+@import './novedades';
