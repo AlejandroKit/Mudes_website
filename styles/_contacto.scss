@@ -1,0 +1,72 @@
+.hero-contacto{
+    background-image: url(../assets/contacto.png);
+    background-position: 45% 80%;
+    background-size: cover;
+    height: 30vh;
+    padding: 0 0;
+
+    div {
+        height: 30vh;
+        background-color: var(--primaryColor600);
+        opacity: .05;
+    }
+}
+
+.main-contacto {
+    padding: 0 0;
+
+    .main-contacto-text {
+        padding: 2rem 1rem;
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--grey-55);
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: var(--grey-55);
+        }
+    }
+
+    .form-container{
+        form{
+            padding: 1rem 1rem;
+            label{
+                font-weight: bold;
+
+                span{
+                    color: var(--primaryColor600)
+                }
+            }
+
+            .form-group{
+                padding-top: 1rem;
+            }
+
+            .form-submit{
+                padding: 1rem 0;
+                .enviar-btn {
+                    cursor: pointer;
+                    color: var(--primaryColor50);
+                    background: var(--primaryColor600);
+                    border: transparent;
+                    border-radius: var(--borderRadius);
+                    letter-spacing: var(--letterSpacing);
+                    width: 100%;
+                    padding: 0.5rem 0;
+                    box-shadow: var(--shadow-1);
+                    transition: var(--transition);
+                    text-transform: capitalize;
+                    display: inline-block;
+                }
+
+                .enviar-btn:hover {
+                    background: var(--primaryColorHover);
+                    box-shadow: var(--shadow-3);
+                }
+            }
+        }
+    }
+}

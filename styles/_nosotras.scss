@@ -1,0 +1,175 @@
+.hero-nosotras{
+    background-image: url(../assets/nosotras.png);
+    background-position: 45% 80%;
+    background-size: cover;
+    height: 30vh;
+    padding: 0 0;
+
+    div {
+        height: 30vh;
+        background-color: var(--primaryColor600);
+        opacity: .05;
+    }
+}
+
+.main-nosotras {
+    padding: 0 0;
+
+    .main-about-nosotras {
+        padding: 2rem 1rem;
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--grey-55);
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: var(--black);
+
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .slider{
+
+        @mixin white-gradient {
+            background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        }
+
+        $animationSpeed: 40s;
+
+        // Styling
+        background: white;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 50px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+
+        // Animation
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-225px * 4))}
+        }
+
+        .slide-track{
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(225px * 8);
+
+            .slide{
+                padding: 0 0rem;
+                width: 100%;
+
+                img{
+                    height:201px;
+                }
+
+                span{
+                    color: var(--primaryColor600);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .mision-nosotras-container{
+        padding: 2rem 1rem;
+
+        .mision-nosotras {
+            h3{
+                color: #000;
+                background: #fff;
+                mix-blend-mode: multiply;
+                position: relative;
+            }
+            
+            h3:before {
+                content: '';
+                display: block;
+                width: 99%;
+                height: 98%;
+                background: linear-gradient(to top, var(--red), var(--primaryColor600));
+                mix-blend-mode: screen; 
+                position: absolute;
+                top: 0.1rem;
+                left: 0.1rem;
+            }
+        }
+
+        .mision-ver-mas-btn{
+            padding: 1rem 0rem;
+            color:var(--primaryColor600);
+            text-align: center;
+
+            a{
+                font-size: 1.3rem;;
+                font-weight: bold;
+
+                i{
+                    margin-left: 1rem;
+                }
+            }
+
+            a:hover{
+                background-color: var(--primaryColor50);
+                color: var(--primaryColor600);
+            }
+        }
+    }
+
+    .main-valores{
+        padding: 2rem 1rem;
+        background-color: var(--primaryColor50);
+
+        h4{
+            color:var(--grey-55)
+        }
+
+        h2{
+            color: var(--red);
+            font-size: 2rem;
+        }
+
+        .single-valor{
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5%;
+            margin: 3rem 0rem;
+            .title{
+                padding-bottom: 1rem;
+                h4{
+                    color: var(--red);
+                }
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+
+}
