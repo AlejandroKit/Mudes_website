@@ -1,12 +1,23 @@
 .main {
-    padding: .5rem 0;
+    padding-top: 1.5rem;
 
     .main-about {
-        padding: 0 .5rem;
+        padding: 0 1rem;
+
+        h1 {
+            color: #000;
+            font-size: 1.2em;
+            font-weight: 500;
+            width: 70%;
+        }
 
         p {
-            color: var(--primaryColor600);
-            font-size: 1.8em;
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.5em;
+            font-weight: 400;
             margin: 15px 0;
         }
 
@@ -14,34 +25,32 @@
             width: 100%;
             font-size: 16px;
         }
-
-        h1 {
-            color: #000;
-            font-size: 1.2em;
-            font-weight: 500;
-        }
     }
 
     .main-socialImpact {
         background-color: var(--primaryColor50);
-        margin-top: 3rem;
-        padding: 2rem .5rem;
+        margin-top: 64px;
+        padding: 2rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .impact {
-            display: flex;
-            margin: 1rem 0;
+        h3 {
+            font-size: 1.2em;
+        }
 
-            i {
-                color: var(--grey-30);
-                font-size: 3em;
-                align-self: center;
+        .impact {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 56px;
+                width: 56px;
             }
 
             div {
-                padding-left: 1rem;
+                padding: 1rem;
 
                 h6 {
                     font-family: var(--bodyFont);
@@ -68,7 +77,12 @@
     }
 
     .main-testimonials {
-        padding: .5rem;
+        padding: 4rem 1rem;
+        padding-bottom: 2.5rem;
+
+        h3 {
+            font-size: 1rem;
+        }
 
         .carousel-indicators {
             bottom: -.5em;
@@ -88,7 +102,7 @@
 
     .main-involucrate {
         div {
-            padding: .5em .8em;
+            padding: 1rem;
             height: 20vh;
             display: flex;
             flex-direction: column;

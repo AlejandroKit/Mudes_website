@@ -16,11 +16,15 @@ html {
 }
 
 :root {
+  --primaryColorHover: #DA0068;
+  /*var(--primaryColorHover)*/
   --primaryColor600: #E5006D;
   /*var(--primaryColor600)*/
-  --primaryColorHover: #da0068;
-  /*var(--primaryColorHover)*/
-  --primaryColor50: #fff5fa;
+  --primaryColor300: #FF479F;
+  /*var(--primaryColor300)*/
+  --primaryColor100: #FEECF4;
+  /*var(--primaryColor100)*/
+  --primaryColor50: #FEFAFC;
   /*var(--primaryColor50)*/
   --mainSpacing: 0.1rem;
   /*var(--mainSpacing)*/
@@ -29,16 +33,16 @@ html {
   /* grey */
   --grey-55: #747474;
   /*var(--grey-55)*/
-  --grey-30: #b3b3b3;
+  --grey-30: #B3B3B3;
   /*var(--grey-30)*/
-  --grey-2: #fafafa;
+  --grey-2: #FAFAFA;
   /*var(--grey-2)*/
   /* rest of the colors */
-  --black: #010101;
+  --black: #01010110;
   /*var(--black)*/
-  --blue: #2f52a0;
+  --blue: #2F52A0;
   /*var(--blue)*/
-  --red: #e6632f;
+  --red: #E6332F;
   /*var(--red)*/
   /* fonts  */
   --headingFont: "Inter", sans-serif;
@@ -119,25 +123,31 @@ p {
 /* --------------- Testimonials ---------------- */
 .testimonio-header {
   display: flex;
-  align-items: center;
+  align-content: center;
 }
 .testimonio-header img {
   object-fit: cover;
-  height: 5em;
-  width: 5em;
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   border: 5px solid var(--primaryColor600);
 }
 .testimonio-header .testimonio-header__text {
   margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .testimonio-header .testimonio-header__text span {
   color: var(--primaryColor600);
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
 }
 .testimonio-header .testimonio-header__text .info {
   color: var(--grey-55);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 .testimonio {
@@ -175,6 +185,8 @@ p {
   top: 0;
   height: 4.5rem;
   width: 100%;
+  opacity: 0.87;
+  border-bottom: 1px solid #fff;
   display: flex;
   align-items: center;
   background: var(--backgroundColor);
@@ -238,44 +250,52 @@ p {
 }
 
 .main {
-  padding: 0.5rem 0;
+  padding-top: 1.5rem;
 }
 .main .main-about {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+}
+.main .main-about h1 {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 70%;
 }
 .main .main-about p {
-  color: var(--primaryColor600);
-  font-size: 1.8em;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5em;
+  font-weight: 400;
   margin: 15px 0;
 }
 .main .main-about button {
   width: 100%;
   font-size: 16px;
 }
-.main .main-about h1 {
-  color: #000;
-  font-size: 1.2em;
-  font-weight: 500;
-}
 .main .main-socialImpact {
   background-color: var(--primaryColor50);
-  margin-top: 3rem;
-  padding: 2rem 0.5rem;
+  margin-top: 64px;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main .main-socialImpact .impact {
-  display: flex;
-  margin: 1rem 0;
+.main .main-socialImpact h3 {
+  font-size: 1.2em;
 }
-.main .main-socialImpact .impact i {
-  color: var(--grey-30);
-  font-size: 3em;
-  align-self: center;
+.main .main-socialImpact .impact {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.main .main-socialImpact .impact img {
+  height: 56px;
+  width: 56px;
 }
 .main .main-socialImpact .impact div {
-  padding-left: 1rem;
+  padding: 1rem;
 }
 .main .main-socialImpact .impact div h6 {
   font-family: var(--bodyFont);
@@ -295,7 +315,11 @@ p {
   font-weight: bold;
 }
 .main .main-testimonials {
-  padding: 0.5rem;
+  padding: 4rem 1rem;
+  padding-bottom: 2.5rem;
+}
+.main .main-testimonials h3 {
+  font-size: 1rem;
 }
 .main .main-testimonials .carousel-indicators {
   bottom: -0.5em;
@@ -310,7 +334,7 @@ p {
   border-radius: 50%;
 }
 .main .main-involucrate div {
-  padding: 0.5em 0.8em;
+  padding: 1rem;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -367,7 +391,8 @@ p {
 }
 
 .news {
-  padding: 0.5rem;
+  background-color: var(--black);
+  padding: 64px 16px 40px 16px;
 }
 .news .news-header {
   display: flex;
@@ -790,13 +815,15 @@ footer .logo-mail-footer a img {
   width: 5em;
 }
 footer div.social {
-  width: 60%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   font-size: 2.4em;
   flex-direction: row;
 }
 footer div.social i {
+  height: 15px;
+  width: 15px;
   color: var(--primaryColor600);
 }
 footer div.social i:hover {
