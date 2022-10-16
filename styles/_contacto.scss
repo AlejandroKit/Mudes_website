@@ -16,7 +16,7 @@
     padding: 0 0;
 
     .main-contacto-text {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0rem 1rem;
 
         h1 {
             font-size: 2.8rem;
@@ -24,7 +24,8 @@
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
+            font-weight: 400;
             margin: 15px 0;
             color: var(--grey-55);
         }
@@ -34,7 +35,7 @@
         form{
             padding: 1rem 1rem;
             label{
-                font-weight: bold;
+                font-weight: 500;
 
                 span{
                     color: var(--primaryColor600)
