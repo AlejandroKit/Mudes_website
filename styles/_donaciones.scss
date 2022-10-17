@@ -24,7 +24,8 @@
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
+            font-weight: 400;
             margin: 15px 0;
             color: var(--grey-55);
         }
@@ -67,6 +68,7 @@
             padding-top: .5rem;
             p{
                 color: var(--grey-55);
+                font-weight: 400;
             }
         }
 
@@ -142,7 +144,8 @@
         .apoya-paragraph{
             padding: 1rem 0;
             p{
-                color:var(--grey-55)
+                color:var(--grey-55);
+                font-weight:400;
             }
         }
 
@@ -164,6 +167,32 @@
                 .ver-datos-btn:hover {
                     background: var(--primaryColorHover);
                     box-shadow: var(--shadow-3);
+                }
+
+                .modal{
+                    .modal-dialog{
+                        .modal-content{
+                            .modal-body{
+                                .modal-block{
+                                    padding-bottom: 1rem;
+                                    h5{
+                                        font-size: 1rem;
+                                    }
+                                    p{
+                                        font-size: 1.125rem;
+                                        color: #010101;
+                                        margin-bottom: 0.5rem;
+                                    }
+                                    input{
+                                        font-size: 1.125rem;
+                                        color: #010101;
+                                        margin-bottom: 0.5rem;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 h5{
