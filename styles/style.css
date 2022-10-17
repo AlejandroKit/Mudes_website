@@ -38,7 +38,7 @@ html {
   --grey-2: #FAFAFA;
   /*var(--grey-2)*/
   /* rest of the colors */
-  --black: #01010110;
+  --black: #010101;
   /*var(--black)*/
   --blue: #2F52A0;
   /*var(--blue)*/
@@ -393,7 +393,7 @@ p {
 }
 
 .news {
-  background-color: var(--black);
+  background-color: rgba(1, 1, 1, 0.062745098);
   padding: 64px 16px 40px 16px;
 }
 .news .news-header {
@@ -1281,16 +1281,17 @@ footer .copyright p {
   padding: 0 0;
 }
 .main-empresas .main-empresas-text {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
 }
 .main-empresas .main-empresas-text h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: var(--grey-55);
 }
 .main-empresas .main-empresas-text p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 400;
   margin: 15px 0;
-  color: var(--grey-55);
+  color: #292929;
 }
 .main-empresas .main-aliado {
   padding: 2rem 1rem;
@@ -1324,19 +1325,21 @@ footer .copyright p {
   margin: 3rem 0rem;
 }
 .main-empresas .main-aliado .single-valor .title {
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 .main-empresas .main-aliado .single-valor .title h4 {
   color: var(--red);
 }
 .main-empresas .main-aliado .single-valor p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: #292929;
+  margin-bottom: 0rem;
 }
 .main-empresas .porque-container {
   padding: 2rem 1rem;
 }
 .main-empresas .porque-container .porque-header h2 {
-  font-weight: bold;
+  font-weight: 500;
 }
 .main-empresas .porque-container .porque-sub-header {
   padding-top: 1rem;
@@ -1366,9 +1369,11 @@ footer .copyright p {
 }
 .main-empresas .porque-container .impacto-container .single-impacto-container h4 {
   color: var(--primaryColor600);
+  font-weight: 400;
 }
 .main-empresas .porque-container .impacto-container .single-impacto-container p {
-  color: var(--grey-55);
+  color: #292929;
+  font-weight: 400;
 }
 .main-empresas .main-contacto .main-contacto-text-empresas {
   padding-top: 1rem;
@@ -1376,7 +1381,7 @@ footer .copyright p {
   padding-right: 1rem;
 }
 .main-empresas .main-contacto .main-contacto-text-empresas h2 {
-  font-weight: bold;
+  font-weight: 500;
 }
 .main-empresas .main-contacto .main-contacto-text-empresas p {
   color: #000;

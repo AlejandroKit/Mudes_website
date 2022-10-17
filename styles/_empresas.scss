@@ -16,17 +16,18 @@
     padding: 0 0;
 
     .main-empresas-text {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0rem 1rem;
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: var(--grey-55);
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
+            font-weight: 400;
             margin: 15px 0;
-            color: var(--grey-55);
+            color: #292929;
         }
     }
 
@@ -65,13 +66,15 @@
             border-radius: 5%;
             margin: 3rem 0rem;
             .title{
-                padding-bottom: 1rem;
+                padding-bottom: 0rem;
                 h4{
                     color: var(--red);
                 }
             }
             p{
-                font-size: 1.3rem;
+                font-size: 1rem;
+                color: #292929;
+                margin-bottom: 0rem;
             }
         }
     }
@@ -80,7 +83,7 @@
         padding: 2rem 1rem;
         .porque-header{
             h2{
-                font-weight: bold;
+                font-weight: 500;
             }
         }
 
@@ -111,10 +114,12 @@
             .single-impacto-container{
                 padding: 1rem 0;
                 h4{
-                    color:var(--primaryColor600)
+                    color:var(--primaryColor600);
+                    font-weight: 400;
                 }
                 p{
-                    color:var(--grey-55)
+                    color:#292929;
+                    font-weight: 400;
                 }
             }
         }
@@ -125,7 +130,7 @@
             padding-left:1rem;
             padding-right: 1rem;
             h2{
-                font-weight: bold;
+                font-weight: 500;
             }
 
             p{
