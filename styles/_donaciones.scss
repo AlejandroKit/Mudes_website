@@ -177,6 +177,7 @@
                                     padding-bottom: 1rem;
                                     h5{
                                         font-size: 1rem;
+                                        color: var(--grey-55);
                                     }
                                     p{
                                         font-size: 1.125rem;
@@ -188,24 +189,17 @@
                                         color: #010101;
                                         margin-bottom: 0.5rem;
                                         font-weight: 600;
+                                        border-style: hidden;
+                                        i{
+                                            margin-left:1rem;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
-
-                h5{
-                    color: var(--grey-55);
-                }
-
-                i{
-                    margin-left:1rem;
-                }
-
-                input{
-                    border-style: hidden;
-                }
+            
         }
     }
 }

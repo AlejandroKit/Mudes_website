@@ -1262,6 +1262,7 @@ footer .copyright p {
 }
 .main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block h5 {
   font-size: 1rem;
+  color: var(--grey-55);
 }
 .main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block p {
   font-size: 1.125rem;
@@ -1273,15 +1274,10 @@ footer .copyright p {
   color: #010101;
   margin-bottom: 0.5rem;
   font-weight: 600;
-}
-.main-donaciones .apoya-container .ver-datos-button h5 {
-  color: var(--grey-55);
-}
-.main-donaciones .apoya-container .ver-datos-button i {
-  margin-left: 1rem;
-}
-.main-donaciones .apoya-container .ver-datos-button input {
   border-style: hidden;
+}
+.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block input i {
+  margin-left: 1rem;
 }
 
 .hero-empresas {
