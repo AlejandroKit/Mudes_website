@@ -1138,7 +1138,8 @@ footer .copyright p {
   color: var(--grey-55);
 }
 .main-donaciones .main-donaciones-text p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 400;
   margin: 15px 0;
   color: var(--grey-55);
 }
@@ -1174,6 +1175,7 @@ footer .copyright p {
 }
 .main-donaciones .recaudacion-container .recaudacion-paragraph p {
   color: var(--grey-55);
+  font-weight: 400;
 }
 .main-donaciones .recaudacion-container .donaciones-grafico {
   display: flex;
@@ -1236,6 +1238,7 @@ footer .copyright p {
 }
 .main-donaciones .apoya-container .apoya-paragraph p {
   color: var(--grey-55);
+  font-weight: 400;
 }
 .main-donaciones .apoya-container .ver-datos-button .ver-datos-btn {
   cursor: pointer;
@@ -1253,6 +1256,23 @@ footer .copyright p {
 .main-donaciones .apoya-container .ver-datos-button .ver-datos-btn:hover {
   background: var(--primaryColorHover);
   box-shadow: var(--shadow-3);
+}
+.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block {
+  padding-bottom: 1rem;
+}
+.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block h5 {
+  font-size: 1rem;
+}
+.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block p {
+  font-size: 1.125rem;
+  color: #010101;
+  margin-bottom: 0.5rem;
+}
+.main-donaciones .apoya-container .ver-datos-button .modal .modal-dialog .modal-content .modal-body .modal-block input {
+  font-size: 1.125rem;
+  color: #010101;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 .main-donaciones .apoya-container .ver-datos-button h5 {
   color: var(--grey-55);
