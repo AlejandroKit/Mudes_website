@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--grey-2);
+    background-color: white;
     color: var(--black);
     font-size: medium;
     padding: 0;
@@ -90,12 +90,11 @@ footer {
         width: 35%;
         display: flex;
         justify-content: space-between;
-        font-size: 2.4em;
         flex-direction: row;
 
         i {
-            height: 15px;
-            width: 15px;
+            height: .7rem;
+            width: .7rem;
             color: var(--primaryColor600)
         }
 
