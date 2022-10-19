@@ -87,7 +87,7 @@ h1 {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h3 {
@@ -102,7 +102,7 @@ ul {
 p {
     font-family: 'Inter', sans-serif;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* --------------- Hero ---------------- */
@@ -122,6 +122,21 @@ p {
 
 /* --------------- End of Hero ---------------- */
 /* --------------- Testimonials ---------------- */
+.carousel-indicators {
+    bottom: -2.5em;
+
+    .active {
+        background-color: var(--primaryColor600) !important;
+    }
+
+    button {
+        background-color: var(--grey-55) !important;
+        height: .5em !important;
+        width: .5em !important;
+        border-radius: 50%;
+    }
+}
+
 .testimonio-header {
     display: flex;
     align-content: center;
@@ -156,7 +171,7 @@ p {
 }
 
 .testimonio {
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
     font-size: 1.1em;
     height: 35vh;

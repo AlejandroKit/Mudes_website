@@ -21,18 +21,29 @@
         }
     }
 
+    .main-testimonials {
+        padding: 1rem;
+    }
+
     .main-colabora {
         background-color: var(--primaryColor50);
         padding: .8em;
 
         h2 {
-            color: var(--primaryColor600);
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
             font-size: 2em;
         }
 
         p {
             color: var(--grey-55);
             font-size: 1.2em;
+        }
+
+        h4 {
+            font-weight: 400;
         }
 
         .cards-container {
@@ -90,11 +101,6 @@
                 border: 3px solid var(--grey-30);
                 border-radius: 5px;
                 outline: none;
-            }
-
-            .tipo-voluntariado {
-                color: var(--grey-55);
-                font-weight: 500;
             }
 
             textarea {

@@ -1,5 +1,5 @@
 .news {
-    background-color: #01010110;
+    background-color: rgb(1, 1, 1, 0.02);
     padding: 64px 16px 40px 16px;
 
     .news-header {
@@ -13,7 +13,7 @@
 
     #carousel-news {
         .carousel-indicators {
-            bottom: -1.5em;
+            bottom: -2.5em;
 
             button {
                 background-color: var(--grey-55);

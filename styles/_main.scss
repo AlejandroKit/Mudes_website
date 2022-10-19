@@ -83,21 +83,6 @@
         h3 {
             font-size: 1rem;
         }
-
-        .carousel-indicators {
-            bottom: -.5em;
-
-            .active {
-                background-color: var(--primaryColor600);
-            }
-
-            button {
-                background-color: var(--grey-55);
-                height: .5em;
-                width: .5em;
-                border-radius: 50%;
-            }
-        }
     }
 
     .main-involucrate {

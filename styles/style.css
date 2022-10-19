@@ -87,7 +87,7 @@ h1 {
 
 h2 {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h3 {
@@ -102,7 +102,7 @@ ul {
 p {
   font-family: "Inter", sans-serif;
   color: var(--black);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* --------------- Hero ---------------- */
@@ -121,13 +121,25 @@ p {
 
 /* --------------- End of Hero ---------------- */
 /* --------------- Testimonials ---------------- */
+.carousel-indicators {
+  bottom: -2.5em;
+}
+.carousel-indicators .active {
+  background-color: var(--primaryColor600) !important;
+}
+.carousel-indicators button {
+  background-color: var(--grey-55) !important;
+  height: 0.5em !important;
+  width: 0.5em !important;
+  border-radius: 50%;
+}
+
 .testimonio-header {
   display: flex;
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -152,7 +164,7 @@ p {
 }
 
 .testimonio {
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
   font-size: 1.1em;
   height: 35vh;
@@ -182,7 +194,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4.5rem;
@@ -323,18 +334,6 @@ p {
 .main .main-testimonials h3 {
   font-size: 1rem;
 }
-.main .main-testimonials .carousel-indicators {
-  bottom: -0.5em;
-}
-.main .main-testimonials .carousel-indicators .active {
-  background-color: var(--primaryColor600);
-}
-.main .main-testimonials .carousel-indicators button {
-  background-color: var(--grey-55);
-  height: 0.5em;
-  width: 0.5em;
-  border-radius: 50%;
-}
 .main .main-involucrate div {
   padding: 1rem;
   height: 20vh;
@@ -393,7 +392,7 @@ p {
 }
 
 .news {
-  background-color: rgba(1, 1, 1, 0.062745098);
+  background-color: rgba(1, 1, 1, 0.02);
   padding: 64px 16px 40px 16px;
 }
 .news .news-header {
@@ -404,7 +403,7 @@ p {
   font-weight: bold;
 }
 .news #carousel-news .carousel-indicators {
-  bottom: -1.5em;
+  bottom: -2.5em;
 }
 .news #carousel-news .carousel-indicators button {
   background-color: var(--grey-55);
@@ -462,10 +461,13 @@ p {
   opacity: 0.3;
 }
 .main-queHacemos .description {
-  padding: 1em 0.8em;
+  padding: 2rem 1rem;
 }
 .main-queHacemos .description h1 {
   font-size: 2em;
+}
+.main-queHacemos .description p {
+  font-weight: 400;
 }
 .main-queHacemos .main-pilares {
   background-color: var(--primaryColor50);
@@ -476,6 +478,7 @@ p {
 }
 .main-queHacemos .main-pilares .pilar {
   background-color: #fff;
+  margin: 24px 0;
   padding: 0.8em;
   border-radius: 10px;
 }
@@ -483,12 +486,12 @@ p {
   color: var(--primaryColor600);
 }
 .main-queHacemos .main-pilares .pilar p {
-  font-weight: 600;
+  font-weight: 400;
 }
 .main-queHacemos .main-pilares .pilar span,
 .main-queHacemos .main-pilares .pilar ul {
   color: var(--grey-55);
-  font-weight: 600;
+  font-weight: 400;
 }
 .main-queHacemos .main-pilares .pilar ul {
   list-style: disc;
@@ -498,10 +501,13 @@ p {
 }
 .main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description h2 {
   color: var(--primaryColor600);
+  font-weight: 500;
+  width: 70%;
 }
 .main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description p {
   color: var(--grey-55);
   font-weight: 500;
+  padding: 0;
 }
 .main-queHacemos .main-proyectoJuanPablo .stats-container {
   color: var(--red);
@@ -542,14 +548,18 @@ p {
 .main-queHacemos .support div {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 50%);
   height: 25vh;
-  padding: 0.8em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .main-queHacemos .support div h2 {
   color: #fff;
-  font-size: 2em;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.main-queHacemos .support div button {
+  width: 100%;
 }
 
 .main-voluntariado .frontpage {
@@ -570,17 +580,26 @@ p {
 .main-voluntariado .description p {
   font-weight: 500;
 }
+.main-voluntariado .main-testimonials {
+  padding: 1rem;
+}
 .main-voluntariado .main-colabora {
   background-color: var(--primaryColor50);
   padding: 0.8em;
 }
 .main-voluntariado .main-colabora h2 {
-  color: var(--primaryColor600);
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 2em;
 }
 .main-voluntariado .main-colabora p {
   color: var(--grey-55);
   font-size: 1.2em;
+}
+.main-voluntariado .main-colabora h4 {
+  font-weight: 400;
 }
 .main-voluntariado .main-colabora .cards-container {
   height: 80%;
@@ -628,10 +647,6 @@ p {
   border: 3px solid var(--grey-30);
   border-radius: 5px;
   outline: none;
-}
-.main-voluntariado .main-form form .tipo-voluntariado {
-  color: var(--grey-55);
-  font-weight: 500;
 }
 .main-voluntariado .main-form form textarea {
   font-size: 1.2em;
@@ -687,8 +702,6 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -800,7 +813,7 @@ footer li:not(:first-child) {
 footer ul li a {
   color: var(--primaryColor600);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 footer ul li a:hover {
   color: var(--primaryColorHover);
@@ -819,7 +832,7 @@ footer .logo-mail-footer a img {
   width: 5em;
 }
 footer div.social {
-  width: 35%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -955,14 +968,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -972,8 +977,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
