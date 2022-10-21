@@ -28,6 +28,9 @@
             font-weight: 400;
             margin: 15px 0;
             color: #292929;
+            span{
+                font-weight: 600;
+            }
         }
     }
 
@@ -36,7 +39,8 @@
         background-color: var(--primaryColor50);
 
         h4{
-            color:var(--grey-55)
+            color:var(--grey-55);
+            font-weight: 400;
         }
 
         h2{
@@ -69,12 +73,14 @@
                 padding-bottom: 0rem;
                 h4{
                     color: var(--red);
+                    font-weight: 400;
                 }
             }
             p{
                 font-size: 1rem;
                 color: #292929;
                 margin-bottom: 0rem;
+                font-weight: 400;
             }
         }
     }

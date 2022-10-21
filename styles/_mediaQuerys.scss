@@ -6,7 +6,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     .navbar-center {
         position: relative;
         justify-content: space-between;
@@ -28,7 +28,6 @@
     .nav-links {
         display: flex;
         font-size: 1.5rem;
-        text-transform: capitalize;
     }
 
     .nav-link {

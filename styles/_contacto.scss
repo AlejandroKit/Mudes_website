@@ -8,7 +8,7 @@
     div {
         height: 30vh;
         background-color: var(--primaryColor600);
-        opacity: .05;
+        opacity: .3;
     }
 }
 
@@ -21,6 +21,7 @@
         h1 {
             font-size: 2.8rem;
             color: var(--grey-55);
+            font-weight: 400;
         }
 
         p {
@@ -68,6 +69,41 @@
                     box-shadow: var(--shadow-3);
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .hero-contacto{
+        background-position:center;
+        background-size: cover;
+    }
+
+    .main-contacto {
+        padding: 2rem 8.75rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .contacto-block{
+        display: flex;
+
+        .hero-contacto{
+            min-width: 500px;
+            min-height: 680px;
+            order: 2;
+            background-image: url(../assets/contacto_desktop.png);
+
+            div {
+                height: 680px;
+                background-color: var(--primaryColor600);
+                opacity: .3;
+            }
+        }
+
+        .main-contacto {
+            padding: 2rem 7.43rem 2rem 8.75rem;
+            order:1;
         }
     }
 }
