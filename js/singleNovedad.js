@@ -1,6 +1,6 @@
 const client = contentful.createClient({
-    space: 'iph7ajthw3a3',
-    accessToken: '7eX3T8FKvI3v2LCIPVoNLs5HafOjeo7FIZXCk8CGvk8'
+    space: 'jkposvghhdwd',
+    accessToken: 'u1Zaa-_HtrHrQRMtDoSPWZ7aIKtuBHCeMmv9IAgi_1A'
 })
 
 //Con estas 3 líneas de código ya tenemos la URL descodificada y almacenada en la variable ‘url’

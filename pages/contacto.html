@@ -18,17 +18,28 @@
     </head>
     <body>
         <!-- navbar -->
+        <div class="navbar-header-desktop">
+            <div class="social">
+                <a href="mailto:info@mudes.pe" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> info@mudes.pe</a>
+                <a href="https://www.linkedin.com/company/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/MUDESPERU/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mudesperu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
         <nav class="navbar page">
             <div class="navbar-center">
                 <!-- logo -->
                 <a href="../index.html"><img src="../assets/MUDES_color.png" class="nav-logo" alt="store logo" /></a>
                 <div class="navbar-buttons">
-                    <a href="./donaciones.html"><button type="button" class="donar-btn">Dona</button></a>
+                    <a href="./donaciones.html" class="donar-button-navbar"><button type="button" class="donar-btn">Dona</button></a>
                     <button class="toggle-nav">
                         <i class="fas fa-bars" style="color: #e5006d"></i>
                     </button>
                 </div>
                 <ul class="nav-links">
+                    <li>
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
                     <li>
                         <a href="./nosotras.html" class="nav-link">Nosotras</a>
                     </li>
@@ -36,50 +47,59 @@
                         <a href="./queHacemos.html" class="nav-link">¿Qué hacemos?</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Sumate</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropbtn">Súmate</a>
+                            <div class="dropdown-content">
+                                <a href="./donaciones.html" class="nav-link">Donaciones</a>
+                                <a href="./voluntariado.html" class="nav-link">Voluntariado</a>
+                                <a href="./empresas.html" class="nav-link">Empresa aliada</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a href="./novedades.html" class="nav-link">Novedades</a>
                     </li>
                     <li>
-                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                        <a href="./contacto.html" class="nav-link" style="color: #e5006d">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- end of navbar -->
         <!-- hero -->
-        <div class="hero-contacto">
-            <div></div>
-        </div>
-        <!-- end of hero -->
-        <div class="main-contacto">
-            <div class="main-contacto-text">
-                <h1>Escríbenos</h1>
-                <p>Puedes contactarnos por cualquier consulta o propuesta que tengas. Te responderemos con mucho gusto.</p>
+        <div class="contacto-block">
+            <div class="hero-contacto">
+                <div></div>
             </div>
-            <div class="form-container">
-                <form class="contact-form" action="" method="post" accept-charset="utf-8">
-                    <div class="form-group">
-                        <label for="firstname">Nombre <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="text" name="nombre" class="form-control name" id="firstname" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname">Apellido <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="text" name="apellido" class="form-control last-name" id="lastname" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail <span class="form-required" title="Campo requerido.">*</span></label>
-                        <input type="email" name="email" class="form-control email" id="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje <span class="form-required" title="Campo requerido.">*</span></label>
-                        <textarea name="mensaje" class="form-control message" rows="4" id="message" required></textarea>
-                    </div>
-                    <div class="form-submit">
-                        <button type="submit" class="enviar-btn">Enviar</button>
-                    </div>
-                </form>
+            <!-- end of hero -->
+            <div class="main-contacto">
+                <div class="main-contacto-text">
+                    <h1>Escríbenos</h1>
+                    <p>Puedes contactarnos por cualquier consulta o propuesta que tengas. Te responderemos con mucho gusto.</p>
+                </div>
+                <div class="form-container">
+                    <form class="contact-form" action="" method="post" accept-charset="utf-8">
+                        <div class="form-group">
+                            <label for="firstname">Nombre <span class="form-required" title="Campo requerido.">*</span></label>
+                            <input type="text" name="nombre" class="form-control name" id="firstname" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Apellido <span class="form-required" title="Campo requerido.">*</span></label>
+                            <input type="text" name="apellido" class="form-control last-name" id="lastname" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="form-required" title="Campo requerido.">*</span></label>
+                            <input type="email" name="email" class="form-control email" id="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje <span class="form-required" title="Campo requerido.">*</span></label>
+                            <textarea name="mensaje" class="form-control message" rows="4" id="message" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="enviar-btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
