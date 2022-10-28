@@ -1,7 +1,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    height: 4.5rem;
+    height: 4rem;
     width: 100%;
     opacity: .87;
     border-bottom: 1px solid #fff;
@@ -14,12 +14,11 @@
 
 .navbar-center {
     width: 100vw;
-    max-width: var(--max-width);
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 .7rem;
+    padding: 0 3rem;
 }
 
 .navbar-buttons {
@@ -65,4 +64,58 @@
 .page .nav-link:hover {
     color: var(--primaryColor);
     transition: var(--transition);
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-center {
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        // margin: 0;
+
+        .navbar-buttons {
+            order: 3;
+        }
+
+        ul {
+            height: 100%;
+            flex-grow: .7;
+            justify-content: space-around;
+            margin: 0;
+            list-style: none;
+        }
+
+        a {
+            color: #292929;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+
+
+    .toggle-nav {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .nav-link {
+        margin-right: 1rem;
+        letter-spacing: var(--spacing);
+        transition: var(--transition);
+        font-size: 1.25rem;
+    }
+
+    .nav-link:hover {
+        color: var(--primaryColorHover);
+    }
+
+    .sidebar-overlay {
+        display: none;
+    }
 }

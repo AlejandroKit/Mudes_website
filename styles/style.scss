@@ -95,6 +95,10 @@ h3 {
     font-family: 'Inter', sans-serif;
 }
 
+a.actual-page {
+    color: var(--primaryColor600) !important;
+}
+
 ul {
     list-style: none;
 }
@@ -114,9 +118,19 @@ p {
     padding: 0 0;
 
     div {
-        height: 40vh;
-        background-color: var(--primaryColor600);
-        opacity: .2;
+        height: 100%;
+        background-color: #E5006D32;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+
+        span {
+            color: #fff;
+            font-weight: 700;
+            font-size: 45px;
+            margin-bottom: 1rem;
+            opacity: 0;
+        }
     }
 }
 

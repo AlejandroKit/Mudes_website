@@ -95,6 +95,10 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
+a.actual-page {
+  color: var(--primaryColor600) !important;
+}
+
 ul {
   list-style: none;
 }
@@ -114,9 +118,18 @@ p {
   padding: 0 0;
 }
 .hero div {
-  height: 40vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.2;
+  height: 100%;
+  background-color: rgba(229, 0, 109, 0.1960784314);
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+}
+.hero div span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  opacity: 0;
 }
 
 /* --------------- End of Hero ---------------- */
@@ -196,7 +209,7 @@ p {
 .navbar {
   position: sticky;
   top: 0;
-  height: 4.5rem;
+  height: 4rem;
   width: 100%;
   opacity: 0.87;
   border-bottom: 1px solid #fff;
@@ -209,12 +222,11 @@ p {
 
 .navbar-center {
   width: 100vw;
-  max-width: var(--max-width);
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.7rem;
+  padding: 0 3rem;
 }
 
 .navbar-buttons {
@@ -262,6 +274,49 @@ p {
   transition: var(--transition);
 }
 
+@media screen and (min-width: 1024px) {
+  .navbar-center {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-center .navbar-buttons {
+    order: 3;
+  }
+  .navbar-center ul {
+    height: 100%;
+    flex-grow: 0.7;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+  }
+  .navbar-center a {
+    color: #292929;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .toggle-nav {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .nav-link {
+    margin-right: 1rem;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    font-size: 1.25rem;
+  }
+  .nav-link:hover {
+    color: var(--primaryColorHover);
+  }
+  .sidebar-overlay {
+    display: none;
+  }
+}
 .main {
   padding-top: 1.5rem;
 }
@@ -272,7 +327,6 @@ p {
   color: #000;
   font-size: 1.2em;
   font-weight: 500;
-  width: 70%;
 }
 .main .main-about p {
   background: linear-gradient(var(--primaryColor600), var(--red));
@@ -336,7 +390,6 @@ p {
 }
 .main .main-involucrate div {
   padding: 1rem;
-  height: 20vh;
   display: flex;
   flex-direction: column;
 }
@@ -391,6 +444,61 @@ p {
   color: var(--primaryColor600) !important;
 }
 
+@media screen and (min-width: 768px) {
+  .main .main-about {
+    text-align: center;
+    font-size: 20px;
+    padding: 32px 60px;
+  }
+  .main .main-about h1 {
+    margin: 0 !important;
+  }
+  .main .main-about button {
+    width: 50%;
+  }
+  .main .main-socialImpact {
+    padding: 32px 60px;
+  }
+  .main .main-socialImpact .impact-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .main-socialImpact .impact-container .impact {
+    justify-content: center;
+  }
+  .main .main-socialImpact .impact-container .a,
+.main .main-socialImpact .impact-container .b {
+    width: 50%;
+  }
+  .main .main-testimonials {
+    padding: 32px 60px;
+  }
+  .main .main-testimonials .carousel {
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 70vh;
+    background-size: 100%;
+  }
+  .hero span {
+    width: 60%;
+    line-height: 1.2;
+    text-align: left;
+    padding: 2rem 4rem;
+  }
+  .main .main-about {
+    padding-left: 385px;
+    padding-right: 385px;
+  }
+  .main .main-socialImpact .a,
+.main .main-socialImpact .b {
+    width: 30% !important;
+  }
+}
 .news {
   background-color: rgba(1, 1, 1, 0.02);
   padding: 64px 16px 40px 16px;
@@ -859,43 +967,13 @@ footer .copyright p {
 }
 
 @media screen and (min-width: 768px) {
+  .hero div span {
+    opacity: 1;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .navbar-center {
-    position: relative;
-    justify-content: space-between;
-    margin: 0rem 0rem;
-  }
-  .navbar-center li {
-    list-style: none;
-  }
-  .navbar-center a {
-    text-decoration: none;
-  }
-  .toggle-nav {
-    display: none;
-  }
-  .nav-links {
-    display: flex;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-  }
-  .nav-link {
-    margin-right: 1rem;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
-    font-size: 1.25rem;
-  }
-  .nav-link:hover {
-    color: var(--primaryColorHover);
-  }
-  .sidebar-overlay {
-    display: none;
   }
 }
 @media screen and (min-width: 1170px) {
