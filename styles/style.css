@@ -152,7 +152,8 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -207,6 +208,7 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -969,6 +971,8 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -1201,6 +1205,14 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1210,7 +1222,8 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -1315,6 +1328,8 @@ footer .copyright p {
 
 .main-contacto {
   padding: 0 0;
+  /* The Modal (background) */
+  /* Modal Content */
 }
 .main-contacto .main-contacto-text {
   padding: 2rem 1rem 0rem 1rem;
@@ -1362,6 +1377,26 @@ footer .copyright p {
 .main-contacto .form-container form .form-submit .enviar-btn:hover {
   background: var(--primaryColorHover);
   box-shadow: var(--shadow-3);
+}
+.main-contacto .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.main-contacto .modal-content {
+  background-color: var(--grey-2);
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid var(--grey-55);
+  width: 80%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
