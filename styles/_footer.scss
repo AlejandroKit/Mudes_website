@@ -117,3 +117,11 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    footer {
+        .row.column {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

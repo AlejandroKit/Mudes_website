@@ -123,14 +123,18 @@
             padding: 0;
             justify-content: end;
 
-
+            .mask {
+                background: linear-gradient(transparent 1%, #000);
+            }
 
             h2 {
-                background: linear-gradient(transparent 1%, #000);
                 color: #fff;
                 font-size: 3em;
                 margin: 0;
-                padding-left: .2em;
+            }
+
+            p {
+                display: none;
             }
         }
 
@@ -194,10 +198,60 @@
         }
 
         .main-testimonials {
-            padding: 32px 60px;
+            padding: 32px 90px;
+            margin-bottom: 6rem;
+
+            h3 {
+                text-align: left;
+                margin-bottom: 40px;
+            }
 
             .carousel {
-                height: 20vh;
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+
+                .carousel-inner {
+
+                    .carousel-sub-item {
+                        display: flex;
+
+                        .testimonio-header {
+                            width: 30%;
+                            display: flex;
+                            flex-direction: column;
+
+                            img {
+                                height: 10rem;
+                                width: 10rem;
+                            }
+                        }
+
+                        .testimonio {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-involucrate {
+            .sumate {
+                .mask {
+                    padding-left: 64px;
+                }
+
+                p {
+                    color: #fff;
+                    width: 50%;
+                    display: block;
+                }
+            }
+
+            .donacion,
+            .empresaAliada,
+            .voluntario {
+                padding: 16px 60px;
             }
         }
     }
@@ -227,6 +281,44 @@
             .a,
             .b {
                 width: 30% !important;
+            }
+        }
+
+        .main-testimonials {
+            h3 {
+                font-size: 20px;
+            }
+
+            .carousel {
+                height: 40vh;
+
+                .carousel-inner {
+                    width: 70%;
+                    display: flex;
+
+                    .carousel-sub-item .testimonio-header {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        .main-involucrate {
+            padding: 64px 160px;
+            display: grid;
+            grid-template-rows: 374px 184px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .sumate {
+                height: unset;
+                grid-row: 1/2;
+                grid-column: 1/4;
+            }
+
+            .donacion,
+            .empresaAliada,
+            .voluntario {
+                padding: 16px;
             }
         }
     }

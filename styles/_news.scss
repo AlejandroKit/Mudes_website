@@ -49,3 +49,22 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .news .news-container {
+        height: 50vh;
+
+        .carousel .carousel-inner {
+            height: 40vh;
+            padding-left: 20%;
+
+            .carousel-item {
+                width: 80%;
+            }
+
+            img {
+                height: 35vh;
+            }
+        }
+    }
+}
