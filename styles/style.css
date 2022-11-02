@@ -1329,7 +1329,6 @@ footer .copyright p {
 .main-contacto {
   padding: 0 0;
   /* The Modal (background) */
-  /* Modal Content */
 }
 .main-contacto .main-contacto-text {
   padding: 2rem 1rem 0rem 1rem;
@@ -1379,10 +1378,10 @@ footer .copyright p {
   box-shadow: var(--shadow-3);
 }
 .main-contacto .modal {
-  display: none; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 10rem; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -1390,13 +1389,18 @@ footer .copyright p {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content */
 }
-.main-contacto .modal-content {
+.main-contacto .modal .modal-content {
   background-color: var(--grey-2);
   margin: auto;
   padding: 1rem;
   border: 1px solid var(--grey-55);
   width: 80%;
+  text-align: center;
+}
+.main-contacto .modal .modal-content p {
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1406,6 +1410,9 @@ footer .copyright p {
   }
   .main-contacto {
     padding: 2rem 8.75rem;
+  }
+  .main-contacto .modal .modal-content {
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1426,6 +1433,9 @@ footer .copyright p {
   .contacto-block .main-contacto {
     padding: 2rem 7.43rem 2rem 8.75rem;
     order: 1;
+  }
+  .contacto-block .main-contacto .modal .modal-content {
+    width: 30%;
   }
 }
 .hero-donaciones {

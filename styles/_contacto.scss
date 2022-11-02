@@ -73,10 +73,10 @@
     }
     /* The Modal (background) */
     .modal {
-        display: none; /* Hidden by default */
+        display: block; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        padding-top: 10rem; /* Location of the box */
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -84,15 +84,20 @@
         overflow: auto; /* Enable scroll if needed */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
 
-    /* Modal Content */
-    .modal-content {
-        background-color: var(--grey-2);
-        margin: auto;
-        padding: 1rem;
-        border: 1px solid var(--grey-55);
-        width: 80%;
+        /* Modal Content */
+        .modal-content {
+            background-color: var(--grey-2);
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid var(--grey-55);
+            width: 80%;
+            text-align: center;
+
+            p{
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
@@ -104,6 +109,12 @@
 
     .main-contacto {
         padding: 2rem 8.75rem;
+
+        .modal {
+            .modal-content {
+                width: 40%;
+            }
+        }
     }
 }
 
@@ -127,6 +138,12 @@
         .main-contacto {
             padding: 2rem 7.43rem 2rem 8.75rem;
             order:1;
+
+            .modal {
+                .modal-content {
+                    width: 30%;
+                }
+            }
         }
     }
 }
