@@ -776,6 +776,13 @@ p {
   font-weight: 500;
   padding: 0;
 }
+.main-queHacemos .main-proyectoJuanPablo .img {
+  background-image: url(../assets/juan-pablo-2do.jpg);
+  width: 100%;
+  height: 321px;
+  background-size: cover;
+  background-position-y: 65%;
+}
 .main-queHacemos .main-proyectoJuanPablo .stats-container {
   color: var(--red);
   margin: 0.8em;
@@ -806,14 +813,15 @@ p {
   padding: 0.8em;
 }
 .main-queHacemos .support {
-  background-image: url(../assets/support.png);
+  background-image: url(../assets/support.jpeg);
+  background-size: cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .main-queHacemos .support div {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 50%);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 30%);
   height: 25vh;
   padding: 1rem;
   display: flex;
@@ -829,6 +837,104 @@ p {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .main-queHacemos .frontpage {
+    height: 360px;
+    background-position-y: 20%;
+  }
+  .main-queHacemos .description {
+    height: 348px;
+    padding: 40px 60px 56px 60px;
+  }
+  .main-queHacemos .main-pilares {
+    padding: 40px 140px 40px 140px;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description {
+    padding-left: 60px;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .img {
+    background-image: url(../assets/juan-pablo-2do.jpg);
+    height: 321px;
+    background-size: cover;
+    background-position-y: 65%;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .juanPablo-stats {
+    padding: 24px 60px;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: unset;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .juanPablo-stats p {
+    order: 1;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .juanPablo-stats .stats-container {
+    order: 2;
+    padding-top: 0;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .juanPablo-stats .stats-container .stats {
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .main-queHacemos .support {
+    background-position-y: 20%;
+    height: 500px;
+  }
+  .main-queHacemos .support div {
+    padding: 0px 128px 32px 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-queHacemos .support div p {
+    color: #fff;
+    margin: 0;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .main-queHacemos .support div a {
+    margin-top: 25px;
+    width: 306px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-queHacemos .description {
+    height: unset;
+    padding: 56px 160px;
+  }
+  .main-queHacemos .description .text {
+    display: flex;
+  }
+  .main-queHacemos .main-pilares .pilar-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .main-queHacemos .main-proyectoJuanPablo {
+    padding: 100px 160px;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description {
+    padding: 0;
+    width: 60%;
+  }
+  .main-queHacemos .support {
+    height: 80vh;
+    background-size: cover;
+    background-position-y: 60%;
+  }
+  .main-queHacemos .support div {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 40%);
+    height: 60%;
+  }
+  .main-queHacemos .support div a {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 306px;
+  }
+}
 .main-voluntariado .frontpage {
   background-image: url(../assets/voluntariado-frontpage.jpeg);
   background-position: center;
@@ -1037,7 +1143,7 @@ footer .row {
 }
 footer .row.primary {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
   align-items: stretch;
 }
 footer .row.primary a {
@@ -1124,7 +1230,8 @@ footer .copyright p {
 }
 
 @media screen and (min-width: 768px) {
-  footer .row.column {
+  footer .row.primary {
+    grid-template-rows: unset;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

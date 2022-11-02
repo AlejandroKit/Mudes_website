@@ -13,7 +13,7 @@ footer {
 
     .row.primary {
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 2fr;
         align-items: stretch;
 
         a {
@@ -120,7 +120,8 @@ footer {
 
 @media screen and (min-width: 768px) {
     footer {
-        .row.column {
+        .row.primary {
+            grid-template-rows: unset;
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
