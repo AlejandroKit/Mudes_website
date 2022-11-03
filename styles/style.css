@@ -1258,7 +1258,7 @@ footer .copyright p {
   }
 }
 .hero-nosotras {
-  background-image: url(../assets/nosotras.png);
+  background-image: url(../assets/nosotras.jpg);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
@@ -1267,7 +1267,7 @@ footer .copyright p {
 .hero-nosotras div {
   height: 30vh;
   background-color: var(--primaryColor600);
-  opacity: 0.05;
+  opacity: 0.3;
 }
 
 .main-nosotras {
@@ -1546,7 +1546,7 @@ footer .copyright p {
   }
 }
 .hero-donaciones {
-  background-image: url(../assets/Donaciones.png);
+  background-image: url(../assets/Donaciones.jpg);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
@@ -1555,7 +1555,7 @@ footer .copyright p {
 .hero-donaciones div {
   height: 30vh;
   background-color: var(--primaryColor600);
-  opacity: 0.05;
+  opacity: 0.3;
 }
 
 .main-donaciones {
@@ -1712,7 +1712,7 @@ footer .copyright p {
 }
 
 .hero-empresas {
-  background-image: url(../assets/empresas.png);
+  background-image: url(../assets/empresas.jpeg);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
@@ -1721,7 +1721,7 @@ footer .copyright p {
 .hero-empresas div {
   height: 30vh;
   background-color: var(--primaryColor600);
-  opacity: 0.05;
+  opacity: 0.3;
 }
 
 .main-empresas {
