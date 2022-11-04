@@ -1864,9 +1864,37 @@ footer .copyright p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .main-empresas .description {
+  .main-empresas .main-empresas-text {
     height: unset;
     padding: 3.68rem 10rem 3.68rem 10rem;
+  }
+  .main-empresas .main-aliado {
+    padding: 5.25rem 10rem;
+  }
+  .main-empresas .main-aliado .aliado-header {
+    padding-bottom: 2.5rem;
+  }
+  .main-empresas .main-aliado .single-valor-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .main-empresas .main-aliado .single-valor-wrapper .single-valor {
+    margin: 0rem 1.25rem 1rem;
+  }
+  .main-empresas .porque-container {
+    padding: 5rem 10rem;
+  }
+  .main-empresas .porque-container .impacto-container {
+    padding: 2.25rem 1rem 0rem;
+    display: flex;
+  }
+  .main-empresas .porque-container .impacto-container .single-impacto-container {
+    min-width: 14rem;
+    max-width: 33.33%;
+  }
+  .main-empresas .porque-container .impacto-container .three {
+    max-width: unset;
+    margin-left: 1rem;
   }
 }
 .hero-novedades {
