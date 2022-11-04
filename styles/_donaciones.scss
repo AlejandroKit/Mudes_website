@@ -44,23 +44,10 @@
             padding-top: 1rem;
 
             h3{
-                color: #000;
-                background: #fff;
-                mix-blend-mode: multiply;
-                position: relative;
-            }
-            
-            h3:before {
-                content: '';
-                display: block;
-                width: 99%;
-                height: 97%;
-                background: linear-gradient(to top, var(--red), var(--primaryColor600));
-                mix-blend-mode: screen; 
-                position:absolute;
-                top: 0.1rem;
-                left: 0.1rem;
-                
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
             }
         }
 

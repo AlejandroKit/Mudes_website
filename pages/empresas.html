@@ -115,20 +115,24 @@
                     <h3>Las alianzas corporativas son una herramienta de triple impacto.</h3>
                 </div>
                 <div class="impacto-container">
-                    <div class="single-impacto-container">
-                        <img src="../assets/Union.png" alt="comunidad" />
-                        <h4>Comunidad</h4>
-                        <p>Mejora la calidad de vida de tu comunidad</p>
+                    <div class="test-grid">
+                        <div class="single-impacto-container">
+                            <img src="../assets/Union.png" alt="comunidad" />
+                            <h4>Comunidad</h4>
+                            <p>Mejora la calidad de vida de tu comunidad</p>
+                        </div>
+                        <div class="single-impacto-container">
+                            <img src="../assets/Vector.png" alt="empleados" />
+                            <h4>Emplead@s</h4>
+                            <p>Mejora la inteligencia emocional y empatía de tu equipo</p>
+                        </div>
                     </div>
-                    <div class="single-impacto-container">
-                        <img src="../assets/Vector.png" alt="empleados" />
-                        <h4>Emplead@s</h4>
-                        <p>Mejora la inteligencia emocional y empatía de tu equipo</p>
-                    </div>
-                    <div class="single-impacto-container">
-                        <img src="../assets/Group.png" alt="empresa" />
-                        <h4>Empresa</h4>
-                        <p>Mejora la percepción de tu compañía y el compromiso de tu equipo</p>
+                    <div class="single-grid">
+                        <div class="single-impacto-container three">
+                            <img src="../assets/Group.png" alt="empresa" />
+                            <h4>Empresa</h4>
+                            <p>Mejora la percepción de tu compañía y el compromiso de tu equipo</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,6 +167,11 @@
                             <button type="submit" class="enviar-btn">Enviar</button>
                         </div>
                     </form>
+                </div>
+                <div id="myModal" class="modal alert">
+                    <div class="modal-content">
+                        <p id="myMensaje">Mensaje enviado correctamente.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,6 +255,9 @@
         <!-- end of footer -->
         <!-- index js -->
         <script src="../js/index.js"></script>
+        <!-- Firebase js -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+        <script type="text/javascript" src="../js/firebase.js"></script>
         <script>
             function myFunction() {
                 // Get the text field
