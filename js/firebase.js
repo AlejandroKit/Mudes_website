@@ -16,7 +16,6 @@ const firebaseConfig = {
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Refernece contactInfo collections
-// let contactInfo = firebase.database().ref("infos");
 const db = firebase.firestore();
 
 // Listen for a submit
@@ -31,7 +30,6 @@ function submitForm(e) {
 	let message = document.querySelector(".message").value;
 	let date = Date.now();
 
-	// saveContactInfo(name, lastName, email, message);
 	const contactObj = new Contact();
 	contactObj.add(name, lastName, email, message, date);
 

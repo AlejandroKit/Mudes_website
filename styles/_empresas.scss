@@ -1,12 +1,12 @@
 .hero-empresas{
     background-image: url(../assets/empresas.jpeg);
-    background-position: 45% 80%;
+    background-position: center;
     background-size: cover;
-    height: 30vh;
-    padding: 0 0;
+    height: 40vh;
+    width: 100%;
 
     div {
-        height: 30vh;
+        height: 100%;
         background-color: var(--primaryColor600);
         opacity: .3;
     }
@@ -21,6 +21,7 @@
         h1 {
             font-size: 2.5rem;
             color: var(--grey-55);
+            font-weight: 400;
         }
 
         p {
@@ -44,24 +45,10 @@
         }
 
         h2{
-            font-size: 2rem;
-            color: #000;
-            background: #fff;
-            mix-blend-mode: multiply;
-            position: relative;
-        }
-        
-        h2:before {
-            content: '';
-            display: block;
-            width: 99%;
-            height: 97%;
-            background: linear-gradient(to top, var(--red), var(--primaryColor600));
-            mix-blend-mode: screen; 
-            position:absolute;
-            top: 0.1rem;
-            left: 0.1rem;
-            
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .single-valor{
@@ -96,22 +83,10 @@
         .porque-sub-header{
             padding-top: 1rem;
             h3{
-                color: #000;
-                background: #fff;
-                mix-blend-mode: multiply;
-                position: relative;
-            }
-            
-            h3:before {
-                content: '';
-                display: block;
-                width: 99%;
-                height: 97%;
-                background: linear-gradient(to top, var(--red), var(--primaryColor600));
-                mix-blend-mode: screen; 
-                position:absolute;
-                top: 0.1rem;
-                left: 0.1rem;
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
             }
         }
 
@@ -140,23 +115,95 @@
             }
 
             p{
-                color: #000;
-                background: #fff;
-                mix-blend-mode: multiply;
-                position: relative;
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
             }
-            
-            p:before {
-                content: '';
-                display: block;
-                width: 99%;
-                height: 96%;
-                background: linear-gradient(to top, var(--red), var(--primaryColor600));
-                mix-blend-mode: screen; 
-                position:absolute;
-                top: 0.1rem;
-                left: 0.1rem;
+        }
+
+            /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 10rem; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+            /* Modal Content */
+            .modal-content {
+                background-color: var(--grey-2);
+                margin: auto;
+                padding: 1rem;
+                border: 1px solid var(--grey-55);
+                width: 80%;
+                text-align: center;
+
+                p{
+                    margin-bottom: 0px;
+                }
             }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-empresas {
+        height: 360px;
+    }
+    .main-empresas {
+        .main-empresas-text {
+            height: 348px;
+            padding: 2.5rem 3.75rem 2.5rem 3.75rem;
+        }
+
+        .main-aliado{
+            padding: 2rem 3.93rem;
+
+            .aliado-header{
+                padding-bottom: 2.5rem;
+            }
+
+            .single-valor{
+                margin: 0rem 4.82rem 1rem;
+            }
+        }
+
+        .porque-container{
+            padding: 2rem 3.75rem;
+
+            .impacto-container{
+                padding: 2.25rem 1rem 0rem;
+                .test-grid{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 1rem;
+                }
+
+                .single-impacto-container{
+                    min-width: 14rem;
+                }
+
+                .three{
+                    max-width: 50%;
+                    margin-left: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main-empresas {
+        .description {
+            height: unset;
+            padding: 3.68rem 10rem 3.68rem 10rem;
         }
     }
 }

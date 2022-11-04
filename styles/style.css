@@ -1354,21 +1354,10 @@ footer .copyright p {
   padding: 2rem 1rem;
 }
 .main-nosotras .mision-nosotras-container .mision-nosotras h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-nosotras .mision-nosotras-container .mision-nosotras h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 98%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-nosotras .mision-nosotras-container .mision-ver-mas-btn {
   padding: 1rem 0rem;
@@ -1585,21 +1574,10 @@ footer .copyright p {
   padding-top: 1rem;
 }
 .main-donaciones .recaudacion-container .recaudacion-sub-title h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-donaciones .recaudacion-container .recaudacion-sub-title h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-donaciones .recaudacion-container .recaudacion-paragraph {
   padding-top: 0.5rem;
@@ -1713,13 +1691,13 @@ footer .copyright p {
 
 .hero-empresas {
   background-image: url(../assets/empresas.jpeg);
-  background-position: 45% 80%;
+  background-position: center;
   background-size: cover;
-  height: 30vh;
-  padding: 0 0;
+  height: 40vh;
+  width: 100%;
 }
 .hero-empresas div {
-  height: 30vh;
+  height: 100%;
   background-color: var(--primaryColor600);
   opacity: 0.3;
 }
@@ -1733,6 +1711,7 @@ footer .copyright p {
 .main-empresas .main-empresas-text h1 {
   font-size: 2.5rem;
   color: var(--grey-55);
+  font-weight: 400;
 }
 .main-empresas .main-empresas-text p {
   font-size: 1rem;
@@ -1752,22 +1731,10 @@ footer .copyright p {
   font-weight: 400;
 }
 .main-empresas .main-aliado h2 {
-  font-size: 2rem;
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-empresas .main-aliado h2:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-empresas .main-aliado .single-valor {
   padding: 1rem;
@@ -1798,21 +1765,10 @@ footer .copyright p {
   padding-top: 1rem;
 }
 .main-empresas .porque-container .porque-sub-header h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-empresas .porque-container .porque-sub-header h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-empresas .porque-container .impacto-container {
   padding-top: 1rem;
@@ -1828,6 +1784,9 @@ footer .copyright p {
   color: #292929;
   font-weight: 400;
 }
+.main-empresas .main-contacto {
+  /* The Modal (background) */
+}
 .main-empresas .main-contacto .main-contacto-text-empresas {
   padding-top: 1rem;
   padding-left: 1rem;
@@ -1837,23 +1796,79 @@ footer .copyright p {
   font-weight: 500;
 }
 .main-empresas .main-contacto .main-contacto-text-empresas p {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.main-empresas .main-contacto .main-contacto-text-empresas p:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 96%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+.main-empresas .main-contacto .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content */
+}
+.main-empresas .main-contacto .modal .modal-content {
+  background-color: var(--grey-2);
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid var(--grey-55);
+  width: 80%;
+  text-align: center;
+}
+.main-empresas .main-contacto .modal .modal-content p {
+  margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-empresas {
+    height: 360px;
+  }
+  .main-empresas .main-empresas-text {
+    height: 348px;
+    padding: 2.5rem 3.75rem 2.5rem 3.75rem;
+  }
+  .main-empresas .main-aliado {
+    padding: 2rem 3.93rem;
+  }
+  .main-empresas .main-aliado .aliado-header {
+    padding-bottom: 2.5rem;
+  }
+  .main-empresas .main-aliado .single-valor {
+    margin: 0rem 4.82rem 1rem;
+  }
+  .main-empresas .porque-container {
+    padding: 2rem 3.75rem;
+  }
+  .main-empresas .porque-container .impacto-container {
+    padding: 2.25rem 1rem 0rem;
+  }
+  .main-empresas .porque-container .impacto-container .test-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .main-empresas .porque-container .impacto-container .single-impacto-container {
+    min-width: 14rem;
+  }
+  .main-empresas .porque-container .impacto-container .three {
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-empresas .description {
+    height: unset;
+    padding: 3.68rem 10rem 3.68rem 10rem;
+  }
+}
 .hero-novedades {
   background-image: url(../assets/contacto.png);
   background-position: 45% 80%;
