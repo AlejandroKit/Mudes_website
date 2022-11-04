@@ -201,9 +201,73 @@
 
 @media screen and (min-width:1024px) {
     .main-empresas {
-        .description {
+        .main-empresas-text {
             height: unset;
             padding: 3.68rem 10rem 3.68rem 10rem;
         }
+
+        .main-aliado{
+            padding: 5.25rem 10rem;
+
+            .aliado-header{
+                padding-bottom: 2.5rem;
+            }
+
+            .single-valor-wrapper{
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+                
+                .single-valor{
+                    margin: 0rem 1.25rem 1rem;
+                }
+            }
+        }
+
+        .porque-container{
+            padding: 5rem 10rem;
+
+            .impacto-container{
+                padding: 2.25rem 1rem 0rem;
+                display: flex;
+
+                .single-impacto-container{
+                    min-width: 14rem;
+                    max-width: 33.33%;
+                }
+
+                .three{
+                    max-width: unset;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        // .contacto-block{
+        //     display: flex;
+    
+        //     .hero-contacto{
+        //         min-width: 500px;
+        //         min-height: 680px;
+        //         order: 2;
+        //         background-image: url(../assets/contacto_desktop.png);
+    
+        //         div {
+        //             height: 680px;
+        //             background-color: var(--primaryColor600);
+        //             opacity: .3;
+        //         }
+        //     }
+    
+        //     .main-contacto {
+        //         padding: 2rem 7.43rem 2rem 8.75rem;
+        //         order:1;
+    
+        //         .modal {
+        //             .modal-content {
+        //                 width: 30%;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
