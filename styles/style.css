@@ -152,8 +152,7 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -208,7 +207,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -581,6 +579,7 @@ p {
   }
   .main .main-testimonials .carousel .carousel-inner .carousel-sub-item .testimonio {
     width: 70%;
+    padding: 0;
   }
   .main .main-involucrate .sumate .mask {
     padding-left: 64px;
@@ -1031,7 +1030,109 @@ p {
   border-radius: 5px;
   outline: none;
 }
+.main-voluntariado .voluntariado-banner {
+  background-image: url(../assets/voluntariado-banner.jpg);
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .main-voluntariado .description {
+    padding: 32px 60px;
+  }
+  .main-voluntariado .description p {
+    margin-bottom: 10px;
+  }
+  .main-voluntariado .main-testimonials {
+    padding: 45px 60px;
+  }
+  .main-voluntariado .main-testimonials .carousel {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+  }
+  .main-voluntariado .main-testimonials .carousel .carousel-inner .carousel-sub-item {
+    display: flex;
+  }
+  .main-voluntariado .main-testimonials .carousel .carousel-inner .carousel-sub-item .testimonio-header {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-voluntariado .main-testimonials .carousel .carousel-inner .carousel-sub-item .testimonio-header img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .main-voluntariado .main-testimonials .carousel .carousel-inner .carousel-sub-item .testimonio {
+    width: 70%;
+    padding: 0;
+  }
+  .main-voluntariado .main-colabora {
+    padding: 80px 60px;
+  }
+  .main-voluntariado .main-colabora .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-voluntariado .main-form {
+    padding: 55px 140px;
+  }
+  .main-voluntariado .voluntariado-banner {
+    width: 100%;
+    height: 444px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-voluntariado .description {
+    padding: 55px 160px;
+  }
+  .main-voluntariado .main-testimonials {
+    padding: 50px 160px;
+  }
+  .main-voluntariado .main-testimonials .carousel {
+    height: 35vh;
+  }
+  .main-voluntariado .main-colabora {
+    padding: 80px 160px;
+  }
+  .main-voluntariado .main-colabora h2 {
+    font-weight: 700;
+  }
+  .main-voluntariado .main-colabora .sub {
+    width: 30%;
+  }
+  .main-voluntariado .main-colabora .cards-container {
+    gap: 40px;
+    padding: 0 64px;
+  }
+  .main-voluntariado .end-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-voluntariado .end-container .main-form {
+    padding: 120px 95px 64px 160px;
+  }
+  .main-voluntariado .end-container .main-form h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .main-voluntariado .end-container .main-form p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .main-voluntariado .end-container .main-form form textarea {
+    font-size: 1rem;
+    height: 20vh;
+  }
+  .main-voluntariado .end-container .voluntariado-banner {
+    height: unset;
+    background-size: cover;
+    background-position-x: 30%;
+  }
+}
 .sidebar {
   width: 99vw;
   height: 99vh;
@@ -1077,8 +1178,6 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -1312,14 +1411,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1329,8 +1420,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
