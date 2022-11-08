@@ -119,7 +119,6 @@ p {
 }
 .hero div {
   height: 100%;
-  background-color: rgba(229, 0, 109, 0.1960784314);
   text-align: center;
   display: flex;
   align-items: flex-end;
@@ -378,7 +377,6 @@ p {
   .nav-links {
     display: flex;
     font-size: 1.5rem;
-    text-transform: capitalize;
   }
   .nav-link {
     margin-right: 1rem;
@@ -708,12 +706,13 @@ p {
 .main-sponsors h2 {
   color: var(--grey-55);
 }
-.main-sponsors .carousel-inner {
+.main-sponsors .carousel .carousel-inner {
   height: 30vh;
 }
-.main-sponsors .carousel-inner img {
+.main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
+  object-fit: contain;
 }
 
 .main-queHacemos .frontpage {
@@ -723,97 +722,98 @@ p {
   height: 40vh;
   width: 100%;
 }
-.main-queHacemos .frontpage div {
-  background-color: var(--primaryColor600);
-  height: 100%;
-  opacity: 0.3;
-}
-.main-queHacemos .description {
+
+.description {
   padding: 2rem 1rem;
 }
-.main-queHacemos .description h1 {
+.description h1 {
   font-size: 2em;
 }
-.main-queHacemos .description p {
+.description p {
   font-weight: 400;
 }
-.main-queHacemos .main-pilares {
+
+.main-pilares {
   background-color: var(--primaryColor50);
   padding: 1em 0.8em;
 }
-.main-queHacemos .main-pilares h3 {
+.main-pilares h3 {
   color: var(--black);
 }
-.main-queHacemos .main-pilares .pilar {
+.main-pilares .pilar {
   background-color: #fff;
   margin: 24px 0;
   padding: 0.8em;
   border-radius: 10px;
 }
-.main-queHacemos .main-pilares .pilar h5 {
-  color: var(--primaryColor600);
+.main-pilares .pilar h5 {
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.main-queHacemos .main-pilares .pilar p {
+.main-pilares .pilar p {
   font-weight: 400;
 }
-.main-queHacemos .main-pilares .pilar span,
-.main-queHacemos .main-pilares .pilar ul {
+.main-pilares .pilar span,
+.main-pilares .pilar ul {
   color: var(--grey-55);
   font-weight: 400;
 }
-.main-queHacemos .main-pilares .pilar ul {
+.main-pilares .pilar ul {
   list-style: disc;
 }
-.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description {
+
+.main-proyectoJuanPablo .proyectoJuanPablo-description {
   padding: 0.8em;
 }
-.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description h2 {
+.main-proyectoJuanPablo .proyectoJuanPablo-description h2 {
   color: var(--primaryColor600);
   font-weight: 500;
   width: 70%;
 }
-.main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description p {
+.main-proyectoJuanPablo .proyectoJuanPablo-description p {
   color: var(--grey-55);
   font-weight: 500;
   padding: 0;
 }
-.main-queHacemos .main-proyectoJuanPablo .img {
+.main-proyectoJuanPablo .img {
   background-image: url(../assets/juan-pablo-2do.jpg);
   width: 100%;
   height: 321px;
   background-size: cover;
   background-position-y: 65%;
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container {
+.main-proyectoJuanPablo .stats-container {
   color: var(--red);
   margin: 0.8em;
   padding: 0.8em;
   border-left: 5px solid var(--red);
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container span {
+.main-proyectoJuanPablo .stats-container span {
   font-weight: 500;
   font-size: 1.2em;
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container .stats {
+.main-proyectoJuanPablo .stats-container .stats {
   display: flex;
   justify-content: space-between;
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container .stats div {
+.main-proyectoJuanPablo .stats-container .stats div {
   display: flex;
   flex-direction: column;
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container .stats .num {
+.main-proyectoJuanPablo .stats-container .stats .num {
   line-height: 1;
   font-size: 4em;
 }
-.main-queHacemos .main-proyectoJuanPablo .stats-container .stats .title {
+.main-proyectoJuanPablo .stats-container .stats .title {
   font-weight: 700;
 }
-.main-queHacemos .main-proyectoJuanPablo p {
+.main-proyectoJuanPablo p {
   color: var(--grey-55);
-  padding: 0.8em;
 }
-.main-queHacemos .support {
+
+.support {
   background-image: url(../assets/support.jpeg);
   background-size: cover;
   height: 40vh;
@@ -821,7 +821,7 @@ p {
   flex-direction: column;
   justify-content: end;
 }
-.main-queHacemos .support div {
+.support div {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 30%);
   height: 25vh;
   padding: 1rem;
@@ -829,12 +829,12 @@ p {
   flex-direction: column;
   justify-content: end;
 }
-.main-queHacemos .support div h2 {
+.support div h2 {
   color: #fff;
   font-size: 2.8rem;
   font-weight: 700;
 }
-.main-queHacemos .support div button {
+.support div button {
   width: 100%;
 }
 
@@ -914,6 +914,9 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
   }
+  .main-queHacemos .main-pilares .pilar-container img {
+    height: 60px;
+  }
   .main-queHacemos .main-proyectoJuanPablo {
     padding: 100px 160px;
   }
@@ -942,11 +945,6 @@ p {
   background-size: cover;
   height: 40vh;
   width: 100%;
-}
-.main-voluntariado .frontpage div {
-  background-color: var(--primaryColor600);
-  height: 100%;
-  opacity: 0.3;
 }
 .main-voluntariado .description {
   padding: 1em 0.8em;
@@ -999,7 +997,10 @@ p {
   margin: 0.8em 0;
 }
 .main-voluntariado .main-form p {
-  color: var(--primaryColor600);
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 1.2em;
   width: 75%;
 }
@@ -1357,16 +1358,11 @@ footer .copyright p {
   }
 }
 .hero-nosotras {
-  background-image: url(../assets/nosotras.png);
+  background-image: url(../assets/nosotras.jpg);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
   padding: 0 0;
-}
-.hero-nosotras div {
-  height: 30vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.05;
 }
 
 .main-nosotras {
@@ -1444,21 +1440,10 @@ footer .copyright p {
   padding: 2rem 1rem;
 }
 .main-nosotras .mision-nosotras-container .mision-nosotras h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-nosotras .mision-nosotras-container .mision-nosotras h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 98%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-nosotras .mision-nosotras-container .mision-ver-mas-btn {
   padding: 1rem 0rem;
@@ -1517,16 +1502,10 @@ footer .copyright p {
   height: 30vh;
   padding: 0 0;
 }
-.hero-contacto div {
-  height: 30vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.3;
-}
 
 .main-contacto {
   padding: 0 0;
   /* The Modal (background) */
-  /* Modal Content */
 }
 .main-contacto .main-contacto-text {
   padding: 2rem 1rem 0rem 1rem;
@@ -1576,24 +1555,38 @@ footer .copyright p {
   box-shadow: var(--shadow-3);
 }
 .main-contacto .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 10rem;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content */
 }
-.main-contacto .modal-content {
+.main-contacto .modal .modal-content {
   background-color: var(--grey-2);
   margin: auto;
   padding: 1rem;
   border: 1px solid var(--grey-55);
   width: 80%;
+  text-align: center;
+}
+.main-contacto .modal .modal-content p {
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1603,6 +1596,9 @@ footer .copyright p {
   }
   .main-contacto {
     padding: 2rem 8.75rem;
+  }
+  .main-contacto .modal .modal-content {
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1624,18 +1620,16 @@ footer .copyright p {
     padding: 2rem 7.43rem 2rem 8.75rem;
     order: 1;
   }
+  .contacto-block .main-contacto .modal .modal-content {
+    width: 30%;
+  }
 }
 .hero-donaciones {
-  background-image: url(../assets/Donaciones.png);
+  background-image: url(../assets/Donaciones.jpg);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
   padding: 0 0;
-}
-.hero-donaciones div {
-  height: 30vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.05;
 }
 
 .main-donaciones {
@@ -1665,21 +1659,10 @@ footer .copyright p {
   padding-top: 1rem;
 }
 .main-donaciones .recaudacion-container .recaudacion-sub-title h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-donaciones .recaudacion-container .recaudacion-sub-title h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main-donaciones .recaudacion-container .recaudacion-paragraph {
   padding-top: 0.5rem;
@@ -1792,16 +1775,11 @@ footer .copyright p {
 }
 
 .hero-empresas {
-  background-image: url(../assets/empresas.png);
-  background-position: 45% 80%;
+  background-image: url(../assets/empresas.jpeg);
+  background-position: center;
   background-size: cover;
-  height: 30vh;
-  padding: 0 0;
-}
-.hero-empresas div {
-  height: 30vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.05;
+  height: 40vh;
+  width: 100%;
 }
 
 .main-empresas {
@@ -1813,6 +1791,7 @@ footer .copyright p {
 .main-empresas .main-empresas-text h1 {
   font-size: 2.5rem;
   color: var(--grey-55);
+  font-weight: 400;
 }
 .main-empresas .main-empresas-text p {
   font-size: 1rem;
@@ -1832,22 +1811,14 @@ footer .copyright p {
   font-weight: 400;
 }
 .main-empresas .main-aliado h2 {
-  font-size: 2rem;
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-empresas .main-aliado h2:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 40%;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52px;
 }
 .main-empresas .main-aliado .single-valor {
   padding: 1rem;
@@ -1878,21 +1849,13 @@ footer .copyright p {
   padding-top: 1rem;
 }
 .main-empresas .porque-container .porque-sub-header h3 {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
-}
-.main-empresas .porque-container .porque-sub-header h3:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 97%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 .main-empresas .porque-container .impacto-container {
   padding-top: 1rem;
@@ -1908,6 +1871,9 @@ footer .copyright p {
   color: #292929;
   font-weight: 400;
 }
+.main-empresas .main-contacto {
+  /* The Modal (background) */
+}
 .main-empresas .main-contacto .main-contacto-text-empresas {
   padding-top: 1rem;
   padding-left: 1rem;
@@ -1917,34 +1883,122 @@ footer .copyright p {
   font-weight: 500;
 }
 .main-empresas .main-contacto .main-contacto-text-empresas p {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: multiply;
-  position: relative;
+  background: linear-gradient(var(--primaryColor600), var(--red));
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.main-empresas .main-contacto .main-contacto-text-empresas p:before {
-  content: "";
-  display: block;
-  width: 99%;
-  height: 96%;
-  background: linear-gradient(to top, var(--red), var(--primaryColor600));
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0.1rem;
-  left: 0.1rem;
+.main-empresas .main-contacto .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 10rem;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content */
+}
+.main-empresas .main-contacto .modal .modal-content {
+  background-color: var(--grey-2);
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid var(--grey-55);
+  width: 80%;
+  text-align: center;
+}
+.main-empresas .main-contacto .modal .modal-content p {
+  margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-empresas {
+    height: 360px;
+  }
+  .main-empresas .main-empresas-text {
+    height: 348px;
+    padding: 2.5rem 3.75rem 2.5rem 3.75rem;
+  }
+  .main-empresas .main-aliado {
+    padding: 2rem 3.93rem;
+  }
+  .main-empresas .main-aliado .aliado-header {
+    padding-bottom: 2.5rem;
+  }
+  .main-empresas .main-aliado .single-valor {
+    margin: 0rem 4.82rem 1rem;
+  }
+  .main-empresas .porque-container {
+    padding: 2rem 3.75rem;
+  }
+  .main-empresas .porque-container .impacto-container {
+    padding: 2.25rem 1rem 0rem;
+  }
+  .main-empresas .porque-container .impacto-container .test-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .main-empresas .porque-container .impacto-container .single-impacto-container {
+    min-width: 14rem;
+  }
+  .main-empresas .porque-container .impacto-container .three {
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-empresas .main-empresas-text {
+    height: unset;
+    padding: 3.68rem 10rem 3.68rem 10rem;
+  }
+  .main-empresas .main-aliado {
+    padding: 5.25rem 10rem;
+  }
+  .main-empresas .main-aliado .aliado-header {
+    padding-bottom: 2.5rem;
+  }
+  .main-empresas .main-aliado .single-valor-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .main-empresas .main-aliado .single-valor-wrapper .single-valor {
+    margin: 0rem 1.25rem 1rem;
+  }
+  .main-empresas .porque-container {
+    padding: 5rem 10rem;
+  }
+  .main-empresas .porque-container .impacto-container {
+    padding: 2.25rem 1rem 0rem;
+    display: flex;
+  }
+  .main-empresas .porque-container .impacto-container .single-impacto-container {
+    min-width: 14rem;
+    max-width: 33.33%;
+  }
+  .main-empresas .porque-container .impacto-container .three {
+    max-width: unset;
+    margin-left: 1rem;
+  }
+}
 .hero-novedades {
   background-image: url(../assets/contacto.png);
   background-position: 45% 80%;
   background-size: cover;
   height: 30vh;
   padding: 0 0;
-}
-.hero-novedades div {
-  height: 30vh;
-  background-color: var(--primaryColor600);
-  opacity: 0.05;
 }
 
 .main-novedades {

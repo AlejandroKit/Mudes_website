@@ -1,15 +1,9 @@
-.hero-donaciones{
-    background-image: url(../assets/Donaciones.png);
+.hero-donaciones {
+    background-image: url(../assets/Donaciones.jpg);
     background-position: 45% 80%;
     background-size: cover;
     height: 30vh;
     padding: 0 0;
-
-    div {
-        height: 30vh;
-        background-color: var(--primaryColor600);
-        opacity: .05;
-    }
 }
 
 .main-donaciones {
@@ -31,175 +25,175 @@
         }
     }
 
-    .recaudacion-container{
+    .recaudacion-container {
         background-color: var(--grey-2);
         padding: 2rem 1rem;
 
-        .recaudacion-title{
-            h2{
+        .recaudacion-title {
+            h2 {
                 font-size: 2rem;
             }
         }
-        .recaudacion-sub-title{
+
+        .recaudacion-sub-title {
             padding-top: 1rem;
 
-            h3{
-                color: #000;
-                background: #fff;
-                mix-blend-mode: multiply;
-                position: relative;
-            }
-            
-            h3:before {
-                content: '';
-                display: block;
-                width: 99%;
-                height: 97%;
-                background: linear-gradient(to top, var(--red), var(--primaryColor600));
-                mix-blend-mode: screen; 
-                position:absolute;
-                top: 0.1rem;
-                left: 0.1rem;
-                
+            h3 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
             }
         }
 
-        .recaudacion-paragraph{
+        .recaudacion-paragraph {
             padding-top: .5rem;
-            p{
+
+            p {
                 color: var(--grey-55);
                 font-weight: 400;
             }
         }
 
-        .donaciones-grafico{
+        .donaciones-grafico {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .donaciones-cifras{
-            .single-cifra-pink{
+        .donaciones-cifras {
+            .single-cifra-pink {
                 border-left: var(--primaryColor600) 4px solid;
                 padding: 0 .5rem;
                 margin: 1rem 0;
 
-                span{
-                    font-weight:900;
+                span {
+                    font-weight: 900;
                     font-size: 2.2rem;
                     color: var(--primaryColor600);
                 }
-                p{
+
+                p {
                     font-size: small;
                     color: var(--grey-55);
                 }
             }
 
-            .single-cifra-blue{
+            .single-cifra-blue {
                 border-left: var(--blue) 4px solid;
                 padding: 0 .5rem;
                 margin: 1rem 0;
 
-                span{
-                    font-weight:900;
+                span {
+                    font-weight: 900;
                     font-size: 2.2rem;
                     color: var(--blue);
                 }
-                p{
+
+                p {
                     font-size: small;
                     color: var(--grey-55);
                 }
             }
 
-            .single-cifra-red{
+            .single-cifra-red {
                 border-left: var(--red) 4px solid;
                 padding: 0 .5rem;
                 margin: 1rem 0;
 
-                span{
-                    font-weight:900;
+                span {
+                    font-weight: 900;
                     font-size: 2.2rem;
                     color: var(--red);
                 }
-                p{
+
+                p {
                     font-size: small;
                     color: var(--grey-55);
                 }
             }
         }
     }
-    .imagen-container{
-        img{
-            width:100%;
+
+    .imagen-container {
+        img {
+            width: 100%;
         }
     }
-    .apoya-container{
+
+    .apoya-container {
         padding: 2rem 1rem;
-        .apoya-title{
-            h2{
+
+        .apoya-title {
+            h2 {
                 color: var(--primaryColor600);
             }
         }
 
-        .apoya-paragraph{
+        .apoya-paragraph {
             padding: 1rem 0;
-            p{
-                color:var(--grey-55);
-                font-weight:400;
+
+            p {
+                color: var(--grey-55);
+                font-weight: 400;
             }
         }
 
-        .ver-datos-button{
-                .ver-datos-btn {
-                    cursor: pointer;
-                    color: var(--primaryColor50);
-                    background: var(--primaryColor600);
-                    border: transparent;
-                    border-radius: var(--borderRadius);
-                    letter-spacing: var(--letterSpacing);
-                    width: 100%;
-                    padding: 0.5rem 0;
-                    box-shadow: var(--shadow-1);
-                    transition: var(--transition);
-                    display: inline-block;
-                }
+        .ver-datos-button {
+            .ver-datos-btn {
+                cursor: pointer;
+                color: var(--primaryColor50);
+                background: var(--primaryColor600);
+                border: transparent;
+                border-radius: var(--borderRadius);
+                letter-spacing: var(--letterSpacing);
+                width: 100%;
+                padding: 0.5rem 0;
+                box-shadow: var(--shadow-1);
+                transition: var(--transition);
+                display: inline-block;
+            }
 
-                .ver-datos-btn:hover {
-                    background: var(--primaryColorHover);
-                    box-shadow: var(--shadow-3);
-                }
+            .ver-datos-btn:hover {
+                background: var(--primaryColorHover);
+                box-shadow: var(--shadow-3);
+            }
 
-                .modal{
-                    .modal-dialog{
-                        .modal-content{
-                            .modal-body{
-                                .modal-block{
-                                    padding-bottom: 1rem;
-                                    h5{
-                                        font-size: 1rem;
-                                        color: var(--grey-55);
-                                    }
-                                    p{
-                                        font-size: 1.125rem;
-                                        color: #010101;
-                                        margin-bottom: 0.5rem;
-                                    }
-                                    input{
-                                        font-size: 1.125rem;
-                                        color: #010101;
-                                        margin-bottom: 0.5rem;
-                                        font-weight: 400;
-                                        border-style: hidden;
-                                        i{
-                                            margin-left:1rem;
-                                        }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        .modal-body {
+                            .modal-block {
+                                padding-bottom: 1rem;
+
+                                h5 {
+                                    font-size: 1rem;
+                                    color: var(--grey-55);
+                                }
+
+                                p {
+                                    font-size: 1.125rem;
+                                    color: #010101;
+                                    margin-bottom: 0.5rem;
+                                }
+
+                                input {
+                                    font-size: 1.125rem;
+                                    color: #010101;
+                                    margin-bottom: 0.5rem;
+                                    font-weight: 400;
+                                    border-style: hidden;
+
+                                    i {
+                                        margin-left: 1rem;
                                     }
                                 }
                             }
                         }
                     }
                 }
-            
+            }
+
         }
     }
 }

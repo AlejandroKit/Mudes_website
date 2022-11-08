@@ -5,147 +5,143 @@
         background-size: cover;
         height: 40vh;
         width: 100%;
+    }
+}
 
-        div {
-            background-color: var(--primaryColor600);
-            height: 100%;
-            opacity: .3;
-        }
+.description {
+    padding: 2rem 1rem;
+
+    h1 {
+        font-size: 2em;
     }
 
-    .description {
-        padding: 2rem 1rem;
+    p {
+        font-weight: 400;
+    }
+}
 
-        h1 {
-            font-size: 2em;
+.main-pilares {
+    background-color: var(--primaryColor50);
+    padding: 1em .8em;
+
+    h3 {
+        color: var(--black);
+    }
+
+    .pilar {
+        background-color: #fff;
+        margin: 24px 0;
+        padding: .8em;
+        border-radius: 10px;
+
+        h5 {
+            background: linear-gradient(var(--primaryColor600), var(--red));
+            background-clip: unset;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         p {
             font-weight: 400;
         }
-    }
 
-    .main-pilares {
-        background-color: var(--primaryColor50);
-        padding: 1em .8em;
-
-        h3 {
-            color: var(--black);
+        span,
+        ul {
+            color: var(--grey-55);
+            font-weight: 400;
         }
 
-        .pilar {
-            background-color: #fff;
-            margin: 24px 0;
-            padding: .8em;
-            border-radius: 10px;
-
-            h5 {
-                color: var(--primaryColor600);
-            }
-
-            p {
-                font-weight: 400;
-            }
-
-            span,
-            ul {
-                color: var(--grey-55);
-                font-weight: 400;
-            }
-
-            ul {
-                list-style: disc;
-            }
+        ul {
+            list-style: disc;
         }
     }
+}
 
-    .main-proyectoJuanPablo {
-        .proyectoJuanPablo-description {
-            padding: .8em;
+.main-proyectoJuanPablo {
+    .proyectoJuanPablo-description {
+        padding: .8em;
 
-            h2 {
-                color: var(--primaryColor600);
-                font-weight: 500;
-                width: 70%;
-            }
-
-            p {
-                color: var(--grey-55);
-                font-weight: 500;
-                padding: 0;
-            }
-        }
-
-        .img {
-            background-image: url(../assets/juan-pablo-2do.jpg);
-            width: 100%;
-            height: 321px;
-            background-size: cover;
-            background-position-y: 65%;
-        }
-
-        .stats-container {
-            color: var(--red);
-            margin: .8em;
-            padding: .8em;
-            border-left: 5px solid var(--red);
-
-            span {
-                font-weight: 500;
-                font-size: 1.2em;
-            }
-
-            .stats {
-                display: flex;
-                justify-content: space-between;
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .num {
-                    line-height: 1;
-                    font-size: 4em;
-                }
-
-                .title {
-                    font-weight: 700;
-                }
-            }
+        h2 {
+            color: var(--primaryColor600);
+            font-weight: 500;
+            width: 70%;
         }
 
         p {
             color: var(--grey-55);
-            padding: .8em;
+            font-weight: 500;
+            padding: 0;
         }
     }
 
-    .support {
-        background-image: url(../assets/support.jpeg);
+    .img {
+        background-image: url(../assets/juan-pablo-2do.jpg);
+        width: 100%;
+        height: 321px;
         background-size: cover;
-        height: 40vh;
+        background-position-y: 65%;
+    }
+
+    .stats-container {
+        color: var(--red);
+        margin: .8em;
+        padding: .8em;
+        border-left: 5px solid var(--red);
+
+        span {
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .num {
+                line-height: 1;
+                font-size: 4em;
+            }
+
+            .title {
+                font-weight: 700;
+            }
+        }
+    }
+
+    p {
+        color: var(--grey-55);
+    }
+}
+
+.support {
+    background-image: url(../assets/support.jpeg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    div {
+        background: linear-gradient(transparent, #000d 30%);
+        height: 25vh;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: end;
 
-        div {
-            background: linear-gradient(transparent, #000d 30%);
-            height: 25vh;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
+        h2 {
+            color: #fff;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
 
-            h2 {
-                color: #fff;
-                font-size: 2.8rem;
-                font-weight: 700;
-            }
-
-            button {
-                width: 100%;
-            }
+        button {
+            width: 100%;
         }
     }
 }
@@ -245,6 +241,10 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
+
+            img {
+                height: 60px;
+            }
         }
 
         .main-proyectoJuanPablo {

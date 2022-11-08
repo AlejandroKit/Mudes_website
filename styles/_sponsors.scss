@@ -8,12 +8,18 @@
         color: var(--grey-55);
     }
 
-    .carousel-inner {
-        height: 30vh;
 
-        img {
+    .carousel {
+
+        .carousel-inner {
             height: 30vh;
-            margin: auto;
+
+            img {
+                height: 30vh;
+                margin: auto;
+                object-fit: contain;
+            }
         }
     }
+
 }

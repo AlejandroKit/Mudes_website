@@ -1,15 +1,9 @@
-.hero-contacto{
+.hero-contacto {
     background-image: url(../assets/contacto.png);
     background-position: 45% 80%;
     background-size: cover;
     height: 30vh;
     padding: 0 0;
-
-    div {
-        height: 30vh;
-        background-color: var(--primaryColor600);
-        opacity: .3;
-    }
 }
 
 .main-contacto {
@@ -32,23 +26,25 @@
         }
     }
 
-    .form-container{
-        form{
+    .form-container {
+        form {
             padding: 1rem 1rem;
-            label{
+
+            label {
                 font-weight: 500;
 
-                span{
+                span {
                     color: var(--primaryColor600)
                 }
             }
 
-            .form-group{
+            .form-group {
                 padding-top: 1rem;
             }
 
-            .form-submit{
+            .form-submit {
                 padding: 1rem 0;
+
                 .enviar-btn {
                     cursor: pointer;
                     color: var(--primaryColor50);
@@ -71,47 +67,68 @@
             }
         }
     }
+
     /* The Modal (background) */
     .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 10rem;
+        /* Location of the box */
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
 
-    /* Modal Content */
-    .modal-content {
-        background-color: var(--grey-2);
-        margin: auto;
-        padding: 1rem;
-        border: 1px solid var(--grey-55);
-        width: 80%;
+        /* Modal Content */
+        .modal-content {
+            background-color: var(--grey-2);
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid var(--grey-55);
+            width: 80%;
+            text-align: center;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .hero-contacto{
-        background-position:center;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-contacto {
+        background-position: center;
         background-size: cover;
     }
 
     .main-contacto {
         padding: 2rem 8.75rem;
+
+        .modal {
+            .modal-content {
+                width: 40%;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 1024px){
-    .contacto-block{
+@media only screen and (min-width: 1024px) {
+    .contacto-block {
         display: flex;
 
-        .hero-contacto{
+        .hero-contacto {
             min-width: 500px;
             min-height: 680px;
             order: 2;
@@ -126,7 +143,13 @@
 
         .main-contacto {
             padding: 2rem 7.43rem 2rem 8.75rem;
-            order:1;
+            order: 1;
+
+            .modal {
+                .modal-content {
+                    width: 30%;
+                }
+            }
         }
     }
 }

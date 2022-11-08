@@ -1,15 +1,9 @@
-.hero-novedades{
+.hero-novedades {
     background-image: url(../assets/contacto.png);
     background-position: 45% 80%;
     background-size: cover;
     height: 30vh;
     padding: 0 0;
-
-    div {
-        height: 30vh;
-        background-color: var(--primaryColor600);
-        opacity: .05;
-    }
 }
 
 .main-novedades {
@@ -29,12 +23,12 @@
             color: var(--grey-55);
         }
 
-        i{
+        i {
             margin-left: 1rem;
         }
     }
 
-    .novedades-container{
+    .novedades-container {
         padding: .5rem .5rem;
 
         .post {
@@ -76,17 +70,17 @@
                 margin: auto;
             }
 
-            i{
-                margin-left:.5rem;
+            i {
+                margin-left: .5rem;
             }
         }
 
-        .post-title{
+        .post-title {
             padding: .2rem 0rem;
             font-weight: bold;
         }
 
-        .module-separator{
+        .module-separator {
             border-top: 1px solid black;
             height: 2px;
             padding: 0;
@@ -94,4 +88,3 @@
         }
     }
 }
-
