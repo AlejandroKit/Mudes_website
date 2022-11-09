@@ -151,7 +151,8 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -206,6 +207,7 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -712,7 +714,8 @@ p {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main-queHacemos .frontpage {
@@ -1179,6 +1182,8 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -1407,6 +1412,14 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1416,7 +1429,8 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -1815,10 +1829,10 @@ footer .copyright p {
   background-clip: unset;
   -webkit-background-clip: text;
   color: transparent;
-  width: 40%;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 52px;
+  width: 80%;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
 }
 .main-empresas .main-aliado .single-valor {
   padding: 1rem;
@@ -1870,6 +1884,9 @@ footer .copyright p {
 .main-empresas .porque-container .impacto-container .single-impacto-container p {
   color: #292929;
   font-weight: 400;
+}
+.main-empresas .form-foto {
+  display: none;
 }
 .main-empresas .main-contacto {
   /* The Modal (background) */
@@ -1970,6 +1987,16 @@ footer .copyright p {
   .main-empresas .main-aliado .aliado-header {
     padding-bottom: 2.5rem;
   }
+  .main-empresas .main-aliado .aliado-header h2 {
+    background: linear-gradient(var(--primaryColor600), var(--red));
+    background-clip: unset;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 80%;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+  }
   .main-empresas .main-aliado .single-valor-wrapper {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -1991,6 +2018,25 @@ footer .copyright p {
   .main-empresas .porque-container .impacto-container .three {
     max-width: unset;
     margin-left: 1rem;
+  }
+  .main-empresas #form {
+    display: flex;
+  }
+  .main-empresas #form .form-foto {
+    display: flex;
+    order: 2;
+    width: 50%;
+    background-image: url(../assets/empresa-foto-form.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .main-empresas #form .main-contacto {
+    padding: 2rem 7.18rem 2rem 8.75rem;
+    order: 1;
+    width: 50%;
+  }
+  .main-empresas #form .main-contacto .modal .modal-content {
+    width: 30%;
   }
 }
 .hero-novedades {

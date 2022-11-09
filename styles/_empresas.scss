@@ -44,10 +44,10 @@
             background-clip: unset;
             -webkit-background-clip: text;
             color: transparent;
-            width: 40%;
-            font-weight: 700;
-            font-size: 45px;
-            line-height: 52px;
+            width: 80%;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 40px;
         }
 
         .single-valor {
@@ -114,6 +114,10 @@
                 }
             }
         }
+    }
+
+    .form-foto{
+        display: none;
     }
 
     .main-contacto {
@@ -234,6 +238,17 @@
 
             .aliado-header {
                 padding-bottom: 2.5rem;
+
+                h2 {
+                    background: linear-gradient(var(--primaryColor600), var(--red));
+                    background-clip: unset;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    width: 80%;
+                    font-weight: 700;
+                    font-size: 45px;
+                    line-height: 52px;
+                }
             }
 
             .single-valor-wrapper {
@@ -265,32 +280,29 @@
             }
         }
 
-        // .contacto-block{
-        //     display: flex;
+        #form {
+            display:flex;
 
-        //     .hero-contacto{
-        //         min-width: 500px;
-        //         min-height: 680px;
-        //         order: 2;
-        //         background-image: url(../assets/contacto_desktop.png);
+            .form-foto{
+                display: flex;
+                order: 2;
+                width: 50%;
+                background-image: url(../assets/empresa-foto-form.jpg);
+                background-size: cover;
+                background-position: center;
+            }
 
-        //         div {
-        //             height: 680px;
-        //             background-color: var(--primaryColor600);
-        //             opacity: .3;
-        //         }
-        //     }
+            .main-contacto{
+                padding: 2rem 7.18rem 2rem 8.75rem;
+                order:1;
+                width: 50%;
 
-        //     .main-contacto {
-        //         padding: 2rem 7.43rem 2rem 8.75rem;
-        //         order:1;
-
-        //         .modal {
-        //             .modal-content {
-        //                 width: 30%;
-        //             }
-        //         }
-        //     }
-        // }
+                .modal {
+                    .modal-content {
+                        width: 30%;
+                    }
+                }
+            }
+        }
     }
 }
