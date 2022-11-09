@@ -84,26 +84,28 @@
             <div class="main-aliado">
                 <div class="aliado-header">
                     <img src="../assets/aliado.png" alt="aliado" />
-                    <h2>Puedes ser nuestro aliado</h2>
-                    <h4>Tu empresa puede considerar distintos planes de alianza.</h4>
+                    <h2>Puedes ser<br> nuestro aliado</h2>
+                    <h4>Tu empresa puede considerar<br> distintos planes de alianza.</h4>
                 </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Donación</h4>
+                <div class="single-valor-wrapper">
+                    <div class="single-valor">
+                        <div class="title">
+                            <h4>Donación</h4>
+                        </div>
+                        <p>Asóciate como empresa o realiza donaciones únicas.</p>
                     </div>
-                    <p>Asóciate como empresa o realiza donaciones únicas.</p>
-                </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Voluntariado corporativo</h4>
+                    <div class="single-valor">
+                        <div class="title">
+                            <h4>Voluntariado corporativo</h4>
+                        </div>
+                        <p>Participa con tu equipo en acciones de voluntariado.</p>
                     </div>
-                    <p>Participa con tu equipo en acciones de voluntariado.</p>
-                </div>
-                <div class="single-valor">
-                    <div class="title">
-                        <h4>Co-creación de proyectos</h4>
+                    <div class="single-valor">
+                        <div class="title">
+                            <h4>Co-creación de proyectos</h4>
+                        </div>
+                        <p>Pensemos proyectos que exploten el potencial de tu empresa para desarrollar valor en conjunto.</p>
                     </div>
-                    <p>Pensemos proyectos que exploten el potencial de tu empresa para desarrollar valor en conjunto.</p>
                 </div>
             </div>
             <div class="porque-container">
@@ -135,44 +137,48 @@
                     </div>
                 </div>
             </div>
-            <div class="main-contacto">
-                <div class="main-contacto-text-empresas">
-                    <h2>¿Quieres sumarte?</h2>
-                    <p>Completa los datos y cuéntanos tu propuesta.</p>
+            <section id="form">
+                <div class="form-foto">
                 </div>
-                <div class="form-container">
-                    <form class="contact-form" action="" method="post" accept-charset="utf-8">
-                        <div class="form-group">
-                            <label for="firstname">Nombre <span class="form-required" title="Campo requerido.">*</span></label>
-                            <input type="text" name="nombre" class="form-control name" id="firstname" required />
+                <div class="main-contacto">
+                    <div class="main-contacto-text-empresas">
+                        <h2>¿Quieres sumarte?</h2>
+                        <p>Completa los datos y cuéntanos tu propuesta.</p>
+                    </div>
+                    <div class="form-container">
+                        <form class="contact-form" action="" method="post" accept-charset="utf-8">
+                            <div class="form-group">
+                                <label for="firstname">Nombre <span class="form-required" title="Campo requerido.">*</span></label>
+                                <input type="text" name="nombre" class="form-control name" id="firstname" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Apellido <span class="form-required" title="Campo requerido.">*</span></label>
+                                <input type="text" name="apellido" class="form-control last-name" id="lastname" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail <span class="form-required" title="Campo requerido.">*</span></label>
+                                <input type="email" name="email" class="form-control email" id="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Empresa <span class="form-required" title="Campo requerido.">*</span></label>
+                                <input type="text" name="empresa" class="form-control empresa" id="empresa" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje <span class="form-required" title="Campo requerido.">*</span></label>
+                                <textarea name="mensaje" class="form-control message" rows="4" id="message" required></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="enviar-btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="myModal" class="modal alert">
+                        <div class="modal-content">
+                            <p id="myMensaje">Mensaje enviado correctamente.</p>
                         </div>
-                        <div class="form-group">
-                            <label for="lastname">Apellido <span class="form-required" title="Campo requerido.">*</span></label>
-                            <input type="text" name="apellido" class="form-control last-name" id="lastname" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail <span class="form-required" title="Campo requerido.">*</span></label>
-                            <input type="email" name="email" class="form-control email" id="email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Empresa <span class="form-required" title="Campo requerido.">*</span></label>
-                            <input type="text" name="empresa" class="form-control empresa" id="empresa" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje <span class="form-required" title="Campo requerido.">*</span></label>
-                            <textarea name="mensaje" class="form-control message" rows="4" id="message" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="enviar-btn">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-                <div id="myModal" class="modal alert">
-                    <div class="modal-content">
-                        <p id="myMensaje">Mensaje enviado correctamente.</p>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <!-- sidebar -->
         <div class="sidebar-overlay">
