@@ -50,20 +50,30 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .news .news-container {
-        height: 50vh;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
 
-        .carousel .carousel-inner {
-            height: 40vh;
-            padding-left: 20%;
-
-            .carousel-item {
-                width: 80%;
+        // height: 50vh;
+        #carousel-news{
+            display: none;
+            
+            .carousel-indicators{
+                display: none;
             }
 
-            img {
-                height: 35vh;
+            .carousel .carousel-inner {
+                .carousel-item {
+                    width: auto;
+                }
+
+                img {
+                    height: 35vh;
+                }
             }
         }
     }
