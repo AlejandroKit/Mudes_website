@@ -1393,6 +1393,9 @@ footer .copyright p {
 .main-nosotras .main-about-nosotras p span {
   font-weight: 600;
 }
+.main-nosotras .grid-container {
+  display: none;
+}
 .main-nosotras .slider {
   background: white;
   margin: auto;
@@ -1513,6 +1516,83 @@ footer .copyright p {
   letter-spacing: 0.5px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-nosotras {
+    background-position: 75% 45%;
+    height: 360px;
+  }
+  .main-nosotras .main-about-nosotras {
+    text-align: center;
+    padding: 2.5rem 7.9rem 2.5rem 7.9rem;
+  }
+  .main-nosotras .main-nosotras-carousel .mision-nosotras-container {
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+  .main-nosotras .main-valores {
+    padding: 3.25rem 3.75rem;
+  }
+  .main-nosotras .main-valores .valores-header {
+    padding-bottom: 1rem;
+  }
+  .main-nosotras .main-valores .valores-header h2 {
+    max-width: 55%;
+  }
+  .main-nosotras .main-valores .single-valor {
+    margin: 2rem 6rem;
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-nosotras .main-about-nosotras {
+    text-align: center;
+    padding: 3.5rem 24.84rem 3.5rem 24.84rem;
+  }
+  .main-nosotras .main-nosotras-carousel .slider {
+    display: none;
+  }
+  .main-nosotras .main-nosotras-carousel .grid-container {
+    padding: 2rem 6rem 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-nosotras .main-nosotras-carousel .grid-container .single-member {
+    padding: 0 0rem;
+    width: 225px;
+  }
+  .main-nosotras .main-nosotras-carousel .grid-container .single-member img {
+    height: 201px;
+  }
+  .main-nosotras .main-nosotras-carousel .grid-container .single-member span {
+    font-size: 0.875rem;
+    color: var(--primaryColor600);
+    font-weight: 600;
+  }
+  .main-nosotras .main-nosotras-carousel .grid-container .single-member p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .main-nosotras .main-nosotras-carousel .mision-nosotras-container {
+    padding-left: 24.37rem;
+    padding-right: 24.37rem;
+  }
+  .main-nosotras .main-valores {
+    padding: 2rem 10rem 6rem;
+  }
+  .main-nosotras .main-valores .valores-header {
+    padding-bottom: 3.5rem;
+  }
+  .main-nosotras .main-valores .valores-header h2 {
+    max-width: 40%;
+  }
+  .main-nosotras .main-valores .single-valor-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .main-nosotras .main-valores .single-valor-wrapper .single-valor {
+    margin: 0rem 1.5rem 1rem;
+  }
+}
 .hero-contacto {
   background-image: url(../assets/contacto.png);
   background-position: 45% 80%;

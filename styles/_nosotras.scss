@@ -29,6 +29,10 @@
         }
     }
 
+    .grid-container{
+        display: none;
+    }
+
     .slider {
 
         @mixin white-gradient {
@@ -174,7 +178,108 @@
                 letter-spacing: 0.5px;
             }
         }
+    }
+}
 
+@media screen and (min-width:768px){
+    .hero-nosotras {
+        background-position: 75% 45%;
+        height: 360px;
     }
 
+    .main-nosotras{
+        .main-about-nosotras{
+            text-align: center;
+            padding: 2.5rem 7.90rem 2.5rem 7.90rem;
+        }
+
+        .main-nosotras-carousel{
+            .mision-nosotras-container{
+                padding-left: 6.75rem ;
+                padding-right: 6.75rem ;
+            }
+        }
+
+        .main-valores{
+            padding: 3.25rem 3.75rem;
+
+            .valores-header{
+                padding-bottom: 1rem;
+                h2{
+                    max-width: 55%;
+                }
+            }
+
+            .single-valor{
+                margin: 2rem 6rem;
+                padding: 1rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main-nosotras{
+        .main-about-nosotras{
+            text-align: center;
+            padding: 3.5rem 24.84rem 3.5rem 24.84rem;
+        }
+
+        .main-nosotras-carousel{
+            .slider{
+                display: none;
+            }
+
+            .grid-container{
+                padding:2rem 6rem 4rem;
+                display: flex;
+                justify-content: space-around;
+
+                .single-member {
+                    padding: 0 0rem;
+                    width: 225px;
+    
+                    img {
+                        height: 201px;
+                    }
+    
+                    span {
+                        font-size: .875rem;
+                        color: var(--primaryColor600);
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        font-size: .875rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .mision-nosotras-container{
+                padding-left: 24.37rem ;
+                padding-right: 24.37rem ;
+            }
+        }
+
+        .main-valores{
+            padding: 2rem 10rem 6rem;
+
+            .valores-header{
+                padding-bottom: 3.5rem;
+                h2{
+                    max-width: 40%;
+                }
+            }
+
+            .single-valor-wrapper {
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+
+                .single-valor {
+                    margin: 0rem 1.5rem 1rem;
+                }
+            }
+        }
+    }
 }
