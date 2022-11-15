@@ -197,3 +197,145 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .hero-donaciones {
+        background-position-y: 50%;
+    }
+
+    .main-donaciones {
+        .main-donaciones-text {
+            padding: 2rem 4rem;
+        }
+
+        .recaudacion-container {
+            padding: 4rem;
+
+            .recaudacion-responsive {
+                height: 278px;
+                display: grid;
+                grid-template-columns: 20% 30% 1fr;
+                grid-template-rows: 78px 1fr;
+                gap: 1rem 2rem;
+
+                .recaudacion-sub-title {
+                    padding: 0;
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+
+                .recaudacion-paragraph {
+                    padding: 0;
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                }
+
+                .donaciones-grafico {
+                    grid-column: 3/4;
+                    grid-row: 1/3;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .donaciones-cifras {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                div {
+                    justify-self: center;
+                }
+
+                .single-cifra-red {
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                }
+            }
+        }
+
+        .imagen-container {
+            width: 50%;
+            height: 45vh;
+            float: right;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .apoya-container {
+            padding: 112px 20px 112px 60px;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-donaciones {
+        height: 360px;
+    }
+
+    .main-donaciones {
+        .main-donaciones-text {
+            width: 60%;
+            padding-left: 160px;
+        }
+
+        .recaudacion-container {
+            padding: 64px 260px;
+
+            .recaudacion-responsive {
+                height: 50vh;
+                row-gap: 2rem;
+
+                .donaciones-grafico img {
+                    height: 100%;
+                }
+            }
+
+            .donaciones-cifras {
+                margin-top: 4rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+
+                .single-cifra-red {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                }
+            }
+        }
+
+        .apoya-container {
+            padding-left: 160px;
+
+            .apoya-dibujo img {
+                height: 80px;
+            }
+
+            .apoya-title h2 {
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 75px;
+                letter-spacing: -0.25px;
+                text-align: left;
+            }
+
+            .apoya-paragraph p {
+                color: #212121;
+            }
+        }
+
+        .imagen-container {
+            height: 80vh;
+        }
+    }
+}
