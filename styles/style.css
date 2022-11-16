@@ -151,8 +151,7 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -196,7 +195,6 @@ p {
   padding: 0.4rem 1.3rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
-  text-transform: capitalize;
   display: inline-block;
 }
 
@@ -207,7 +205,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -428,29 +425,33 @@ p {
 .main .main-socialImpact h3 {
   font-size: 1.2em;
 }
-.main .main-socialImpact .impact {
-  margin: 1rem 0;
+.main .main-socialImpact .impact-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.main .main-socialImpact .impact-container .impact {
+  padding: 1rem;
   display: flex;
   align-items: center;
+  border: 1px solid rgba(1, 1, 1, 0.3333333333);
+  border-radius: 10px;
 }
-.main .main-socialImpact .impact img {
+.main .main-socialImpact .impact-container .impact img {
+  width: 60px;
   height: 56px;
-  width: 56px;
+  margin-right: 5px;
 }
-.main .main-socialImpact .impact div {
-  padding: 1rem;
-}
-.main .main-socialImpact .impact div h6 {
+.main .main-socialImpact .impact-container .impact div h6 {
   font-family: var(--bodyFont);
   color: var(--primaryColor600);
   font-size: 2.5rem;
 }
-.main .main-socialImpact .impact div p {
+.main .main-socialImpact .impact-container .impact div p {
   color: var(--grey-55);
   font-size: 1em;
-  width: 85%;
 }
-.main .main-socialImpact .impact div p span {
+.main .main-socialImpact .impact-container .impact div p span {
   color: var(--primaryColor600);
 }
 .main .main-socialImpact a {
@@ -723,8 +724,7 @@ p {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main-queHacemos .frontpage {
@@ -807,8 +807,9 @@ p {
   font-size: 1.2em;
 }
 .main-proyectoJuanPablo .stats-container .stats {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
 }
 .main-proyectoJuanPablo .stats-container .stats div {
   display: flex;
@@ -1044,7 +1045,7 @@ p {
   outline: none;
 }
 .main-voluntariado .voluntariado-banner {
-  background-image: url(../assets/voluntariado-banner.jpg);
+  background-image: url(../assets/empresa-foto-form.jpg);
   display: none;
 }
 
@@ -1093,6 +1094,8 @@ p {
     width: 100%;
     height: 444px;
     display: block;
+    background-size: cover;
+    background-position-y: 50%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1142,7 +1145,7 @@ p {
   }
   .main-voluntariado .end-container .voluntariado-banner {
     height: unset;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position-x: 30%;
   }
 }
@@ -1191,8 +1194,6 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -1424,14 +1425,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1441,8 +1434,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
