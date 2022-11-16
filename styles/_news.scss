@@ -52,6 +52,16 @@
 
 @media screen and (min-width: 1024px) {
     .news .news-container {
+        #posts-desktop {
+            .portada {
+                span {
+                    color: var(--primaryColor600);
+                    font-family: var(--bodyFont);
+                    font-weight: 100;
+                }
+            }
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

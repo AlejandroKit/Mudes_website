@@ -1,6 +1,6 @@
 .hero-donaciones {
     background-image: url(../assets/Donaciones.jpg);
-    background-position: 45% 80%;
+    background-position: 55% 80%;
     background-size: cover;
     height: 30vh;
     padding: 0 0;
@@ -59,6 +59,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            img{
+                width: 65%;
+            }
         }
 
         .donaciones-cifras {
@@ -126,7 +130,10 @@
 
         .apoya-title {
             h2 {
-                color: var(--primaryColor600);
+                background: linear-gradient(var(--primaryColor600), var(--red));
+                background-clip: unset;
+                -webkit-background-clip: text;
+                color: transparent;
             }
         }
 
@@ -183,17 +190,154 @@
                                     margin-bottom: 0.5rem;
                                     font-weight: 400;
                                     border-style: hidden;
+                                }
 
-                                    i {
-                                        margin-left: 1rem;
-                                    }
+                                i {
+                                    margin-left: 1rem;
                                 }
                             }
                         }
                     }
                 }
             }
+        }
+    }
+}
 
+@media screen and (min-width:768px){
+    .hero-donaciones {
+        background-position: 80% 40%;
+        height: 360px;
+    }
+
+    .main-donaciones{
+        .main-donaciones-text{
+            text-align:start;
+            padding: 2rem 3.75rem 2rem 3.75rem;
+        }
+
+        .recaudacion-container{
+            padding: 4rem 3.75rem 4rem 3.75rem;
+            
+            .recaudacion-title{
+                text-align:initial;
+                padding-bottom: 2.5rem;
+            }
+
+            .container-father{
+                display:flex;
+                justify-content: space-between;
+
+                .container-one{
+                    flex-direction: column;
+                    max-width: 50%;
+                }
+                .container-two{
+                    width: 50%;
+
+                    .donaciones-grafico{
+                        height: 100%;
+
+                        img{
+                            max-width: 70%;
+                        }
+                    }
+                }
+            }
+
+            .donaciones-cifras{
+                padding: 2.25rem 1rem 0rem;
+                .test-grid {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 1rem;
+
+                    .single-cifra-pink, .single-cifra-blue{
+                        max-width: 60%;
+                    }
+                }
+                .three {
+                    max-width: 20%;
+                    margin-left: 35%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .apoya-wrapper{
+            display: flex;
+
+            .imagen-container{
+                width:45%;
+                order: 2;
+
+                img{
+                    height: auto;
+                }
+            }
+
+            @supports(object-fit: cover){
+                .imagen-container img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            .apoya-container{
+                padding: 6.23rem 3.75rem 6.23rem;
+                width:55%;
+                order: 1;
+
+                .apoya-title{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main-donaciones{
+        .main-donaciones-text{
+            padding: 3.5rem 10rem 3.5rem 10rem;
+        }
+
+        .recaudacion-container{
+            padding: 4rem 16rem 4rem 16rem;
+
+            
+            .donaciones-cifras {
+                padding: 2.25rem 1rem 0rem;
+                display: flex;
+
+                .single-cifra-pink, .single-cifra-blue, .single-cifra-red {
+                    min-width: 14rem;
+                    max-width: 33.33%;
+                    height: 75%;
+                }
+
+                .three {
+                    max-width: unset;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .apoya-wrapper{
+            .apoya-container{
+                padding: 3.39rem 10rem 3.39rem;
+                width:55%;
+                order: 1;
+
+                .apoya-title{
+                    width: 75%;
+
+                    h2{
+                        font-weight: 700;
+                    }
+                }
+            }
         }
     }
 }
