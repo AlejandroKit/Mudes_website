@@ -95,7 +95,7 @@
                 font-size: 1.2em;
                 margin-bottom: .8em;
                 padding: 0 .2em;
-                border: 3px solid var(--grey-30);
+                // border: 3px solid var(--grey-30);
                 border-radius: 5px;
                 outline: none;
             }
@@ -104,9 +104,13 @@
                 font-size: 1.2em;
                 margin-bottom: .8em;
                 padding: 0 .2em;
-                border: 3px solid var(--grey-30);
+                // border: 3px solid var(--grey-30);
                 border-radius: 5px;
                 outline: none;
+            }
+
+            button{
+                width: 100%;
             }
         }
     }
@@ -114,6 +118,44 @@
     .voluntariado-banner {
         background-image: url(../assets/empresa-foto-form.jpg);
         display: none;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 10rem;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+
+        /* Modal Content */
+        .modal-content {
+            background-color: var(--grey-2);
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid var(--grey-55);
+            width: 80%;
+            text-align: center;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
@@ -180,6 +222,12 @@
             background-size: cover;
             background-position-y: 50%;
         }
+
+        .modal {
+            .modal-content {
+                width: 40%;
+            }
+        }
     }
 }
 
@@ -238,12 +286,23 @@
                     font-size: 1rem;
                     height: 20vh;
                 }
+
+                form button {
+                    width: 50%;
+                    margin-left: 50%;
+                }
             }
 
             .voluntariado-banner {
                 height: unset;
                 background-repeat: no-repeat;
                 background-position-x: 30%;
+            }
+        }
+
+        .modal {
+            .modal-content {
+                width: 40%;
             }
         }
     }
