@@ -151,8 +151,7 @@ p {
   align-content: center;
 }
 .testimonio-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -206,7 +205,6 @@ p {
 
 /*---------- end of botón Donar -------------------- */
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 4rem;
@@ -726,8 +724,7 @@ p {
 .main-sponsors .carousel .carousel-inner img {
   height: 30vh;
   margin: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main-queHacemos .frontpage {
@@ -935,6 +932,9 @@ p {
   }
   .main-queHacemos .main-proyectoJuanPablo {
     padding: 100px 160px;
+  }
+  .main-queHacemos .main-proyectoJuanPablo .img {
+    background-position-y: 45%;
   }
   .main-queHacemos .main-proyectoJuanPablo .proyectoJuanPablo-description {
     padding: 0;
@@ -1245,8 +1245,6 @@ aside div.social {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   height: 100%;
   display: grid;
@@ -1478,14 +1476,6 @@ footer .copyright p {
   left: 0;
   top: 0;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-900px);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1495,8 +1485,7 @@ footer .copyright p {
   }
 }
 .main-nosotras .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: 1800px;
 }
@@ -1996,13 +1985,11 @@ footer .copyright p {
   .main-donaciones .apoya-wrapper .imagen-container img {
     height: auto;
   }
-  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  @supports (object-fit: cover) {
     .main-donaciones .apoya-wrapper .imagen-container img {
       height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center center;
-         object-position: center center;
+      object-fit: cover;
+      object-position: center center;
     }
   }
   .main-donaciones .apoya-wrapper .apoya-container {
@@ -2099,8 +2086,7 @@ footer .copyright p {
   }
   .main-donaciones .imagen-container img {
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-donaciones .apoya-container {
     padding: 112px 20px 112px 60px;
@@ -2396,7 +2382,7 @@ footer .copyright p {
     display: flex;
     order: 2;
     width: 50%;
-    background-image: url(../assets/empresa-foto-form.jpg);
+    background-image: url(../assets/pacifico-shoot.jpg);
     background-size: cover;
     background-position: center;
   }
