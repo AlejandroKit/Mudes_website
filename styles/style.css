@@ -786,7 +786,7 @@ p {
     -webkit-animation: scroll 40s linear infinite;
             animation: scroll 40s linear infinite;
     display: flex;
-    width: 3500px;
+    width: 3000px;
   }
   .main-sponsors #carousel-colaboraciones-desktop .slider .slide {
     display: flex;
