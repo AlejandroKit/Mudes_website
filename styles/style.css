@@ -2576,4 +2576,24 @@ footer .copyright p {
   .main-novedades {
     padding: 3.5rem 10rem 3.5rem 10rem;
   }
+}
+.float-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 55%;
+}
+.float-button img {
+  width: 5rem;
+  height: auto;
+}
+
+.float-button:hover a {
+  opacity: 80%;
 }/*# sourceMappingURL=style.css.map */
