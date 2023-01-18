@@ -2579,21 +2579,30 @@ footer .copyright p {
 }
 .float-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: transparent;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--primaryColorHover);
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 1rem 1rem;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 55%;
+  font-size: 1rem;
+  border-radius: 1rem;
 }
 .float-button img {
-  width: 5rem;
-  height: auto;
+  filter: invert(100%);
+  padding-right: 1rem;
+  height: 20.5px;
+}
+.float-button a {
+  color: #FEF7FB;
+  font-weight: 600;
 }
 
+.float-button:hover {
+  background-color: var(--primaryColor600);
+  transition: 0.3s;
+}
 .float-button:hover a {
   opacity: 80%;
 }/*# sourceMappingURL=style.css.map */
