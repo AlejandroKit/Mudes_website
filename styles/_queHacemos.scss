@@ -1,6 +1,6 @@
 .main-queHacemos {
     .frontpage {
-        background-image: url(../assets/que-hacemos-frontpage.jpeg);
+        background-image: url(../assets/que-hacemos-frontpage.jpg);
         background-position: center;
         background-size: cover;
         height: 40vh;
@@ -114,14 +114,21 @@
         }
     }
 
-    p {
-        color: var(--grey-55);
+    .text{
+        padding: 1rem;
+        
+        p {
+            color: var(--grey-55);
+        }
     }
+
+
 }
 
 .support {
-    background-image: url(../assets/support.jpeg);
+    background-image: url(../assets/support.jpg);
     background-size: cover;
+    background-position: 30%;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -135,9 +142,14 @@
         flex-direction: column;
         justify-content: end;
 
+        p{
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.096);
+        }
+
         h2 {
             color: #fff;
-            font-size: 2.8rem;
+            font-size: 1.8rem;
             font-weight: 700;
         }
 
@@ -200,7 +212,7 @@
         }
 
         .support {
-            background-position-y: 20%;
+            background-position-y: 50%;
             height: 500px;
 
             div {
@@ -264,7 +276,7 @@
         .support {
             height: 80vh;
             background-size: cover;
-            background-position-y: 60%;
+            background-position-y: 50%;
 
             div {
                 background: linear-gradient(transparent, #000d 40%);

@@ -1,8 +1,8 @@
 .hero-donaciones {
     background-image: url(../assets/Donaciones.jpg);
-    background-position: 55% 80%;
+    background-position: 50% 50%;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     padding: 0 0;
 }
 
@@ -334,6 +334,7 @@
                     width: 75%;
 
                     h2{
+                        font-size: 2.9rem;
                         font-weight: 700;
                     }
                 }
@@ -401,8 +402,8 @@
         }
 
         .imagen-container {
-            width: 50%;
-            height: 45vh;
+            width: 30%;
+            height: 60vh;
             float: right;
 
             img {

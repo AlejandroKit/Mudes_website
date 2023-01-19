@@ -111,8 +111,8 @@ p {
 
 /* --------------- Hero ---------------- */
 .hero {
-  background-image: url(../assets/Hero.jpeg);
-  background-position: 45% 80%;
+  background-image: url(../assets/Hero.jpg);
+  background-position: 45% 45%;
   background-size: 190%;
   height: 40vh;
   padding: 0 0;
@@ -810,7 +810,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
 }
 .main-queHacemos .frontpage {
-  background-image: url(../assets/que-hacemos-frontpage.jpeg);
+  background-image: url(../assets/que-hacemos-frontpage.jpg);
   background-position: center;
   background-size: cover;
   height: 40vh;
@@ -904,13 +904,17 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 .main-proyectoJuanPablo .stats-container .stats .title {
   font-weight: 700;
 }
-.main-proyectoJuanPablo p {
+.main-proyectoJuanPablo .text {
+  padding: 1rem;
+}
+.main-proyectoJuanPablo .text p {
   color: var(--grey-55);
 }
 
 .support {
-  background-image: url(../assets/support.jpeg);
+  background-image: url(../assets/support.jpg);
   background-size: cover;
+  background-position: 30%;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -924,9 +928,13 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   flex-direction: column;
   justify-content: end;
 }
+.support div p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.096);
+}
 .support div h2 {
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .support div button {
@@ -974,7 +982,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
     gap: 30px;
   }
   .main-queHacemos .support {
-    background-position-y: 20%;
+    background-position-y: 50%;
     height: 500px;
   }
   .main-queHacemos .support div {
@@ -1025,7 +1033,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   .main-queHacemos .support {
     height: 80vh;
     background-size: cover;
-    background-position-y: 60%;
+    background-position-y: 50%;
   }
   .main-queHacemos .support div {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8666666667) 40%);
@@ -1041,8 +1049,8 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   /* The Modal (background) */
 }
 .main-voluntariado .frontpage {
-  background-image: url(../assets/voluntariado-frontpage.jpeg);
-  background-position: center;
+  background-image: url(../assets/voluntariado-frontpage.jpg);
+  background-position: 100% 85%;
   background-size: cover;
   height: 40vh;
   width: 100%;
@@ -1055,6 +1063,9 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 }
 .main-voluntariado .main-testimonials {
   padding: 1rem;
+}
+.main-voluntariado .main-testimonials .testimonio {
+  font-size: 0.75rem;
 }
 .main-voluntariado .main-colabora {
   background-color: var(--primaryColor50);
@@ -1173,6 +1184,9 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
 }
 
 @media screen and (min-width: 768px) {
+  .main-voluntariado .frontpage {
+    height: 360px;
+  }
   .main-voluntariado .description {
     padding: 32px 60px;
   }
@@ -1202,6 +1216,7 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   .main-voluntariado .main-testimonials .carousel .carousel-inner .carousel-sub-item .testimonio {
     width: 70%;
     padding: 0;
+    font-size: 0.82rem;
   }
   .main-voluntariado .main-colabora {
     padding: 80px 60px;
@@ -1233,6 +1248,9 @@ a.feed-powered-by-es.feed-powered-by-es-slider-new {
   }
   .main-voluntariado .main-testimonials .carousel {
     height: 35vh;
+  }
+  .main-voluntariado .main-testimonials .testimonio {
+    font-size: 1rem !important;
   }
   .main-voluntariado .main-colabora {
     padding: 80px 160px;
@@ -1509,7 +1527,7 @@ footer .copyright p {
 }
 .hero-nosotras {
   background-image: url(../assets/nosotras.jpg);
-  background-position: 45% 80%;
+  background-position: 45% 40%;
   background-size: cover;
   height: 30vh;
   padding: 0 0;
@@ -1735,10 +1753,10 @@ footer .copyright p {
   }
 }
 .hero-contacto {
-  background-image: url(../assets/contacto.png);
-  background-position: 45% 80%;
+  background-image: url(../assets/contacto.jpg);
+  background-position: 40% 45%;
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   padding: 0 0;
 }
 
@@ -1830,8 +1848,8 @@ footer .copyright p {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .hero-contacto {
-    background-position: center;
     background-size: cover;
+    height: 360px;
   }
   .main-contacto {
     padding: 2rem 8.75rem;
@@ -1848,7 +1866,7 @@ footer .copyright p {
     min-width: 500px;
     min-height: 680px;
     order: 2;
-    background-image: url(../assets/contacto_desktop.png);
+    background-image: url(../assets/contacto.jpg);
   }
   .contacto-block .hero-contacto div {
     height: 680px;
@@ -1865,9 +1883,9 @@ footer .copyright p {
 }
 .hero-donaciones {
   background-image: url(../assets/Donaciones.jpg);
-  background-position: 55% 80%;
+  background-position: 50% 50%;
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   padding: 0 0;
 }
 
@@ -2125,6 +2143,7 @@ footer .copyright p {
     width: 75%;
   }
   .main-donaciones .apoya-wrapper .apoya-container .apoya-title h2 {
+    font-size: 2.9rem;
     font-weight: 700;
   }
 }
@@ -2175,8 +2194,8 @@ footer .copyright p {
     grid-row: 2/3;
   }
   .main-donaciones .imagen-container {
-    width: 50%;
-    height: 45vh;
+    width: 30%;
+    height: 60vh;
     float: right;
   }
   .main-donaciones .imagen-container img {
@@ -2241,8 +2260,8 @@ footer .copyright p {
   }
 }
 .hero-empresas {
-  background-image: url(../assets/empresas.jpeg);
-  background-position: center;
+  background-image: url(../assets/empresas.jpg);
+  background-position: 40% 25%;
   background-size: cover;
   height: 40vh;
   width: 100%;
@@ -2492,10 +2511,10 @@ footer .copyright p {
   }
 }
 .hero-novedades {
-  background-image: url(../assets/contacto.png);
+  background-image: url(../assets/novedades.jpg);
   background-position: 45% 80%;
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   padding: 0 0;
 }
 

@@ -1,7 +1,7 @@
 .main-voluntariado {
     .frontpage {
-        background-image: url(../assets/voluntariado-frontpage.jpeg);
-        background-position: center;
+        background-image: url(../assets/voluntariado-frontpage.jpg);
+        background-position: 100% 85%;
         background-size: cover;
         height: 40vh;
         width: 100%;
@@ -17,6 +17,10 @@
 
     .main-testimonials {
         padding: 1rem;
+
+        .testimonio{
+            font-size: .75rem;
+        }
     }
 
     .main-colabora {
@@ -161,6 +165,10 @@
 
 @media screen and (min-width: 768px) {
     .main-voluntariado {
+        .frontpage {
+            height: 360px;
+        }
+
         .description {
             padding: 32px 60px;
 
@@ -196,6 +204,7 @@
                         .testimonio {
                             width: 70%;
                             padding: 0;
+                            font-size: .82rem;
                         }
                     }
                 }
@@ -242,6 +251,10 @@
 
             .carousel {
                 height: 35vh;
+            }
+
+            .testimonio{
+                font-size: 1rem !important;
             }
         }
 
